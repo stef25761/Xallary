@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xallary.Android", "Xallary.Android\Xallary.Android.csproj", "{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xallary", "Xallary\Xallary.csproj", "{C289F5F4-A6FD-4348-910B-B66A55C5D45D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07640D4-2532-494D-AB7F-F6FBEE9A1F85}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C289F5F4-A6FD-4348-910B-B66A55C5D45D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBB7958E-D382-4892-93F9-325F9AD12FAE}
+	EndGlobalSection
+EndGlobal
