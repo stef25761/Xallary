@@ -16,7 +16,7 @@ namespace Xallary.ViewModels
 
         public CameraViewModel()
         {
-            PickPhotoCommand = new Command(this.DoPickPhoto);
+            PickPhotoCommand = new Command(this.PickPhotoAsync);
             CapturePhotoCommand = new Command(this.DoCapturePhoto, () => MediaPicker.IsCaptureSupported);
         }
 
@@ -49,11 +49,13 @@ namespace Xallary.ViewModels
         /// <summary>
         /// Pick photo command.
         /// </summary>
-        async private void DoPickPhoto()
+        async private void PickPhotoAsync()
         {
             try
             {
+                
                 var photo = await MediaPicker.PickPhotoAsync();
+;
 
                 await this.LoadPhotoAsync(photo);
 
@@ -75,7 +77,8 @@ namespace Xallary.ViewModels
             }
 
             // save the file into local storage
-            var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+            
+            var newFile = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
             using (var stream = await photo.OpenReadAsync())
             using (var newStream = File.OpenWrite(newFile))
             {
