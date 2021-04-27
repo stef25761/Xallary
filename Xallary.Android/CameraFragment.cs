@@ -80,7 +80,7 @@ namespace Xallary.Droid
         #region Overrides
 
         public override Android.Views.View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) => inflater.Inflate(Resource.Layout.CameraFragment, null);
-        public override void OnViewCreated(Android.Views.View view, Bundle savedInstanceState) => texture = view.FindViewById<AutoFitTextureView>(Resource.Id.cameratexture);
+        public override void OnViewCreated(Android.Views.View view, Bundle savedInstanceState) =>texture = view.FindViewById<AutoFitTextureView>(Resource.Id.cameratexture);
 
         public override void OnPause()
         {

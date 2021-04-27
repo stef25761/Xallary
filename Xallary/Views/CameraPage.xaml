@@ -12,13 +12,9 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Grid>
-                <StackLayout Padding="10">
-                    <customElements:CameraPreview Camera="Front" 
+            <customElements:CameraPreview Camera="Front" 
                                                   HorizontalOptions="FillAndExpand" 
-                                                  VerticalOptions="FillAndExpand"/>
-                </StackLayout>
-            </Grid>
+                                                  VerticalOptions="FillAndExpand" BackgroundColor="Black"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
