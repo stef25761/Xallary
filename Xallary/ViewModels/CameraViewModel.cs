@@ -15,7 +15,7 @@ namespace Xallary.ViewModels
     {
         private bool showPhoto;
         private string photoPath;
-        public List<string> paths = new List<string>();
+
         public CameraViewModel()
         {
             PickPhotoCommand = new Command(this.PickPhotoAsync);
@@ -41,7 +41,7 @@ namespace Xallary.ViewModels
                     await stream.CopyToAsync(ms);
 
                     DependencyService.Get<IFileService>().SavePicture(photo.FileName, ms.ToArray());
-                    this.paths = DependencyService.Get<IFileService>().GetPicturePaths();
+                    
 
                 }
 
@@ -89,19 +89,6 @@ namespace Xallary.ViewModels
                 return;
             }
 
-            // save the file into local storage
-            
-            //var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-            //using (var stream = await photo.OpenReadAsync())
-            //using (var newStream = File.OpenWrite(newFile))
-            //{
-            //    // maybe we need here to reset the stream to use it in stept to copyToAsync()
-            //    // or start a new stream with photo..
-
-            //    await stream.CopyToAsync(newStream);
-            //}
-
-            
             PhotoPath = photo.FullPath;
             ShowPhoto = true;
         }

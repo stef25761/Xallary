@@ -12,8 +12,8 @@
 
     <ContentPage.Content>
         <StackLayout>
-         
-                <customElements:CameraPreview   Camera="Rear" 
+            
+            <customElements:CameraPreview   Camera="Rear" 
                                                 HorizontalOptions="FillAndExpand" 
                                                 VerticalOptions="FillAndExpand"/>
                 <Button Text="Take Photo" Padding="5" Margin="5" HorizontalOptions="Fill"/>

@@ -32,7 +32,7 @@
     <TabBar>
         
         <ShellContent Title="CameraFullView" Icon="camera.png" Route="CameraPage" ContentTemplate="{DataTemplate local:CameraPage}" />
-        <ShellContent Title="Gallery" Icon="images.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Gallery" Icon="images.png" ContentTemplate="{DataTemplate local:GalleryPage}" />
         <ShellContent Title="CameraEssentials" Icon="camera.png" Route="CameraPageEssential" ContentTemplate="{DataTemplate local:CamaraPageEssential}"/>
     </TabBar>
 </Shell>
