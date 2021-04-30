@@ -15,7 +15,7 @@ namespace Xallary.ViewModels
     {
         private bool showPhoto;
         private string photoPath;
-
+        public List<string> paths = new List<string>();
         public CameraViewModel()
         {
             PickPhotoCommand = new Command(this.PickPhotoAsync);
@@ -32,8 +32,19 @@ namespace Xallary.ViewModels
             {
                 var photo = await MediaPicker.CapturePhotoAsync();
 
-                await LoadPhotoAsync(photo);
-                
+                var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                using (var stream = await photo.OpenReadAsync())
+                using (var ms = new MemoryStream())
+                using (var newStream = File.OpenWrite(newFile))
+                {
+
+                    await stream.CopyToAsync(ms);
+
+                    DependencyService.Get<IFileService>().SavePicture(photo.FileName, ms.ToArray());
+                    this.paths = DependencyService.Get<IFileService>().GetPicturePaths();
+
+                }
+
                 Console.WriteLine($"CapturePhotoAsync COMPLETED: {PhotoPath}");
             }
             catch (Exception ex)
@@ -68,7 +79,7 @@ namespace Xallary.ViewModels
                 Console.WriteLine($"PickPhotoAsync THREW: {ex.Message}");
             }
         }
-        public List<string> paths = new List<string>();
+        
         async private Task LoadPhotoAsync(FileResult photo)
         {
             // canceled
@@ -80,23 +91,18 @@ namespace Xallary.ViewModels
 
             // save the file into local storage
             
-            var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-            using (var stream = await photo.OpenReadAsync())
-            using (var ms = new MemoryStream())
-            using (var newStream = File.OpenWrite(newFile))
-            {
-                // maybe we need here to reset the stream to use it in stept to copyToAsync()
-                // or start a new stream with photo..
-                await stream.CopyToAsync(ms);
-                
-                DependencyService.Get<IFileService>().SavePicture("ImageName.jpg", ms.ToArray());
-                this.paths.Add(newFile);
-             
-                await stream.CopyToAsync(newStream);
-            }
+            //var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+            //using (var stream = await photo.OpenReadAsync())
+            //using (var newStream = File.OpenWrite(newFile))
+            //{
+            //    // maybe we need here to reset the stream to use it in stept to copyToAsync()
+            //    // or start a new stream with photo..
+
+            //    await stream.CopyToAsync(newStream);
+            //}
 
             
-            PhotoPath = newFile;
+            PhotoPath = photo.FullPath;
             ShowPhoto = true;
         }
 
