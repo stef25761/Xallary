@@ -40,7 +40,7 @@ namespace Xallary.ViewModels
 
                     await stream.CopyToAsync(ms);
 
-                    DependencyService.Get<IFileService>().SavePicture(photo.FileName, ms.ToArray());
+                    DependencyService.Resolve<IFileService>().SavePicture(photo.FileName, ms.ToArray());
                     
 
                 }

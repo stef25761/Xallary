@@ -11,7 +11,7 @@ namespace Xallary.ViewModels
     public class GalleryViewModel : BaseViewModel
     {
         private List<ImageSource> source;
-
+        private IFileService fileService;
         public List<ImageSource> Source { get => this.source; set => this.SetProperty(ref this.source, value); }
 
         /// <summary>
@@ -19,8 +19,22 @@ namespace Xallary.ViewModels
         /// </summary>
         public GalleryViewModel()
         {
+
+            fileService = DependencyService.Resolve<IFileService>(DependencyFetchTarget.NewInstance);
+            using (fileService as IDisposable)
+            {
+                var tmp = this.fileService.GetPicturePaths();
+                try
+                {
+                    this.StringsToItemSource(tmp);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
             
-            this.StringsToItemSource(DependencyService.Get<IFileService>().GetPicturePaths());
 
         }
 

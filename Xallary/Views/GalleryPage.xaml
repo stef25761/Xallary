@@ -3,20 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:viewModel="clr-namespace:Xallary.ViewModels"
              x:Class="Xallary.Views.GalleryPage">
-    
+
     <ContentPage.BindingContext>
         <viewModel:GalleryViewModel/>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
-        <StackLayout>
-            <ListView ItemsSource="{Binding Source}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Image Source="{Binding .}"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <StackLayout BindableLayout.ItemsSource="{Binding Source}"
+                    >
+            <BindableLayout.EmptyView>
+                <StackLayout>
+                    <Label Text="Empty"
+                   FontAttributes="Italic"
+                   FontSize="Small" />
+                    <Label Text="No Picture found"
+                   FontAttributes="Italic"
+                   FontSize="Small" />
+                </StackLayout>
+            </BindableLayout.EmptyView>
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}"/>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
