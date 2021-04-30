@@ -7,6 +7,6 @@ namespace Xallary.Api
 {
     public interface IFileService
     {
-        void SavePicture(string name, Stream data, string location = "tmp");
+        void SavePicture(string name, byte[] photoData);
     }
 }

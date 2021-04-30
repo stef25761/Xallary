@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xallary.Api;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -31,7 +32,7 @@ namespace Xallary.ViewModels
                 var photo = await MediaPicker.CapturePhotoAsync();
 
                 await LoadPhotoAsync(photo);
-
+                
                 Console.WriteLine($"CapturePhotoAsync COMPLETED: {PhotoPath}");
             }
             catch (Exception ex)
@@ -78,13 +79,19 @@ namespace Xallary.ViewModels
 
             // save the file into local storage
             
-            var newFile = Path.Combine(FileSystem.AppDataDirectory, photo.FileName);
+            var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
             using (var stream = await photo.OpenReadAsync())
+            using (var ms = new MemoryStream())
             using (var newStream = File.OpenWrite(newFile))
             {
+                // maybe we need here to reset the stream to use it in stept to copyToAsync()
+                // or start a new stream with photo..
+               // await stream.CopyToAsync(ms);
+                //DependencyService.Get<IFileService>().SavePicture("ImageName.jpg", ms.ToArray());
                 await stream.CopyToAsync(newStream);
             }
 
+            
             PhotoPath = newFile;
             ShowPhoto = true;
         }

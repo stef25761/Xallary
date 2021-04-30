@@ -8,34 +8,37 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using Xallary.Api;
 using Xallary.Droid.Service;
+using Xamarin.Forms;
 
-[assembly: Dependency(nameof(FileService),LoadHint.Default)]
+[assembly: Dependency(typeof(FileService))]
 namespace Xallary.Droid.Service
 {
 
     public class FileService : IFileService
     {
-        public void SavePicture(string name, Stream data, string location = "temp")
+        public void SavePicture(string name, byte[] photoData)
         {
-            var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            documentsPath = Path.Combine(documentsPath, "Orders", location);
-            Directory.CreateDirectory(documentsPath);
+            // /data/user/0/com.companyname.xallary/files/Pictures
+            var documentsPath = Path.Combine(
+                System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyPictures), name);
 
-            string filePath = Path.Combine(documentsPath, name);
 
-            byte[] bArray = new byte[data.Length];
-            using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
+            string fileName = name + System.DateTime.Now.ToString("yyyyMMddHHmmssfff") + ".jpg";
+
+            try
             {
-                using (data)
+                File.WriteAllBytes(documentsPath, photoData);
+                if (File.Exists(documentsPath))
                 {
-                    data.Read(bArray, 0, (int)data.Length);
+                    
                 }
-                int length = bArray.Length;
-                fs.Write(bArray, 0, length);
+            }
+            catch (System.Exception e)
+            {
+                System.Console.WriteLine(e.ToString());
             }
         }
     }
