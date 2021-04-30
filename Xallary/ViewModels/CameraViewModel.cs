@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -67,7 +68,7 @@ namespace Xallary.ViewModels
                 Console.WriteLine($"PickPhotoAsync THREW: {ex.Message}");
             }
         }
-
+        public List<string> paths = new List<string>();
         async private Task LoadPhotoAsync(FileResult photo)
         {
             // canceled
@@ -86,8 +87,11 @@ namespace Xallary.ViewModels
             {
                 // maybe we need here to reset the stream to use it in stept to copyToAsync()
                 // or start a new stream with photo..
-               // await stream.CopyToAsync(ms);
-                //DependencyService.Get<IFileService>().SavePicture("ImageName.jpg", ms.ToArray());
+                await stream.CopyToAsync(ms);
+                
+                DependencyService.Get<IFileService>().SavePicture("ImageName.jpg", ms.ToArray());
+                this.paths.Add(newFile);
+             
                 await stream.CopyToAsync(newStream);
             }
 
