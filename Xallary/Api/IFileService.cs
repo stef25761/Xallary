@@ -8,6 +8,5 @@ namespace Xallary.Api
     public interface IFileService
     {
         void SavePicture(string name, byte[] photoData);
-        List<string> GetPicturePaths();
     }
 }

@@ -68,10 +68,7 @@ namespace Xallary.ViewModels
             {
                 
                 var photo = await MediaPicker.PickPhotoAsync();
-;
-
                 await this.LoadPhotoAsync(photo);
-
                 Console.WriteLine($"PickPhotoAsync COMPLETED: {PhotoPath}");
             }
             catch (Exception ex)

@@ -1,5 +1,4 @@
 ﻿using System;
-using Xallary.Services;
 using Xallary.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,7 +12,6 @@ namespace Xallary
         {
             InitializeComponent();
             Device.SetFlags(new string[] { "MediaElement_Experimental" });
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

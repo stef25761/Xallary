@@ -19,18 +19,6 @@ namespace Xallary.Droid.Service
 
     public class FileService : IFileService
     {
-        public List<string> GetPicturePaths()
-        {
-            Java.IO.File storagePath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryPictures);
-            
-            if (Directory.Exists(storagePath.ToString()))
-            {
-                return  Directory.GetFiles(storagePath.ToString()).ToList();
-            }
-
-            return new List<string>();
-            
-        }
 
         public void SavePicture(string name, byte[] photoData)
         {
