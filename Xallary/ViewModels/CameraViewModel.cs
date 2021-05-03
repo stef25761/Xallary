@@ -30,7 +30,9 @@ namespace Xallary.ViewModels
 
             try
             {
-                var photo = await MediaPicker.CapturePhotoAsync();
+                // Auskommentierer Code ist Aufgabe!
+                /*Augabe1*/
+                //var photo = await MediaPicker.CapturePhotoAsync();
 
                 var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
                 using (var stream = await photo.OpenReadAsync())
@@ -40,7 +42,7 @@ namespace Xallary.ViewModels
 
                     await stream.CopyToAsync(ms);
 
-                    DependencyService.Resolve<IFileService>().SavePicture(photo.FileName, ms.ToArray());
+                    //DependencyService.Resolve<IFileService>().SavePicture(photo.FileName, ms.ToArray());
                     
 
                 }
@@ -56,8 +58,8 @@ namespace Xallary.ViewModels
         public ICommand PickPhotoCommand { get; }
         public ICommand CapturePhotoCommand { get; }
 
-        public bool ShowPhoto { get => this.showPhoto; set => this.SetProperty(ref this.showPhoto, value); }
-        public string PhotoPath { get => this.photoPath; set => this.SetProperty(ref this.photoPath, value); }
+        public bool ShowPhoto { get => this.showPhoto; /*set => this.SetProperty(ref this.showPhoto, value);*/ }
+        public string PhotoPath { get => this.photoPath; /*set => this.SetProperty(ref this.photoPath, value);*/ }
 
         /// <summary>
         /// Pick photo command.
@@ -67,8 +69,8 @@ namespace Xallary.ViewModels
             try
             {
                 
-                var photo = await MediaPicker.PickPhotoAsync();
-                await this.LoadPhotoAsync(photo);
+                //var photo = await MediaPicker.PickPhotoAsync();
+                //await this.LoadPhotoAsync(photo);
                 Console.WriteLine($"PickPhotoAsync COMPLETED: {PhotoPath}");
             }
             catch (Exception ex)
@@ -86,7 +88,7 @@ namespace Xallary.ViewModels
                 return;
             }
 
-            PhotoPath = photo.FullPath;
+            //PhotoPath = photo.FullPath;
             ShowPhoto = true;
         }
 
