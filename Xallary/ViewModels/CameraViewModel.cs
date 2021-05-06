@@ -13,8 +13,10 @@ namespace Xallary.ViewModels
 {
     public class CameraViewModel : BaseViewModel
     {
-        private bool showPhoto;
-        private string photoPath;
+        //AUFGABE START
+
+        //AUFGABE ENDE
+
 
         public CameraViewModel()
         {
@@ -30,9 +32,7 @@ namespace Xallary.ViewModels
 
             try
             {
-                // Auskommentierer Code ist Aufgabe!
-                /*Augabe1*/
-                //var photo = await MediaPicker.CapturePhotoAsync();
+                var photo = await MediaPicker.CapturePhotoAsync();
 
                 var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
                 using (var stream = await photo.OpenReadAsync())
@@ -42,7 +42,7 @@ namespace Xallary.ViewModels
 
                     await stream.CopyToAsync(ms);
 
-                    //DependencyService.Resolve<IFileService>().SavePicture(photo.FileName, ms.ToArray());
+                    DependencyService.Resolve<IFileService>().SavePicture(photo.FileName, ms.ToArray());
                     
 
                 }
@@ -54,23 +54,26 @@ namespace Xallary.ViewModels
                 Console.WriteLine($"CapturePhotoAsync THREW: {ex.Message}");
             }
         }
-
         public ICommand PickPhotoCommand { get; }
         public ICommand CapturePhotoCommand { get; }
 
-        public bool ShowPhoto { get => this.showPhoto; /*set => this.SetProperty(ref this.showPhoto, value);*/ }
-        public string PhotoPath { get => this.photoPath; /*set => this.SetProperty(ref this.photoPath, value);*/ }
+        //AUFGABE START
+
+        //AUFGABE ENDE
+
 
         /// <summary>
         /// Pick photo command.
         /// </summary>
+        /// 
+
         async private void PickPhotoAsync()
         {
             try
             {
                 
-                //var photo = await MediaPicker.PickPhotoAsync();
-                //await this.LoadPhotoAsync(photo);
+                var photo = await MediaPicker.PickPhotoAsync();
+                await this.LoadPhotoAsync(photo);
                 Console.WriteLine($"PickPhotoAsync COMPLETED: {PhotoPath}");
             }
             catch (Exception ex)
@@ -81,15 +84,9 @@ namespace Xallary.ViewModels
         
         async private Task LoadPhotoAsync(FileResult photo)
         {
-            // canceled
-            if (photo == null)
-            {
-                PhotoPath = null;
-                return;
-            }
+            //AUFGABE START
 
-            //PhotoPath = photo.FullPath;
-            ShowPhoto = true;
+            //AUFGABE ENDE
         }
 
         public override void OnDisappearing()
