@@ -30,7 +30,8 @@
     </Shell.Resources>
 
     <TabBar>
-        <!--<ShellContent Title="CameraFullView" Icon="camera.png" Route="CameraPage" ContentTemplate="{DataTemplate local:CameraPage}" />
-        <ShellContent Title="CameraEssentials" Icon="camera.png" Route="CameraPageEssential" ContentTemplate="{DataTemplate local:CamaraPageEssential}"/>-->
+        <!-- AUFGABE START -->
+
+        <!-- AUFGABE ENDE -->
     </TabBar>
 </Shell>
