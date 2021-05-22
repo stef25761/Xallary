@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage[light,math]{iwona}
+\usepackage[T1]{fontenc}
+
+\usepackage[ngerman]{babel}
+\usepackage{hyphenat}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{relsize}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\title{\textbf{Xamarin CPD}}
+\author{
+    Nico Hohm
+    \and
+    Nick Johannsen
+    \and
+    Stefan Köhn
+    }
+\date{\today}
+
+\begin{document}
+
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.9\textwidth]{xamarin-logo}
+\end{figure}
+\newpage
+\tableofcontents
+\newpage
+
+\pagestyle{plain}
+\section{Überblick}
+
+\subsection{Grundidee und Ziel}
+Xamarin ist eine Open Source Plattform von Microsoft. Das Ziel von Xamarin ist es die Cross Plattform Entwicklung mobilen Applikationen zu erleichtern. Hierfür werden C\# als Programmier- , XAML als Markup Sprache und .NET bzw. .Net Core als Framework verwendet.
+
+Das Prinzip hinter Xamarin besteht darin eine Codebasis zu entwickeln die zum großen Anteil für die Android, iOS und Microsoft Geräte wiederverwendet werden, wobei native Funktionen separat hinzugefügt werden können um so die Cross Plattform App-Entwicklung gegenüber der herkömmlichen Entwicklung erheblich zu vereinfachen.
+
+Zusätzlich bietet Xamarin alle Vorteile die durch das Verwenden der modernen Programmiersprache C\#, die ohne Verlust der Funktionen in die jeweilige Sprache des Mobilen Gerätes übersetzt wird.
+
+\subsection{Funktionsweise}
+Je nach Betriebssystem wird die C\# und XAML Dateien in eine native Version kompiliert, die das
+Betriebssystems ausführen kann. Somit werden hierbei die Vorzüge eines Compilers genutzt im Gegenteil zu Interpretierten Sprachen, wie JavaScript.
+
+\subsection{Funktionsumfang}
+
+\subsubsection{GUI}
+\textit{XAML} ist die Markup-Language (siehe Abb. \ref{fig:xamlcode}) von Microsoft. Diese wird unter anderem bei anderen Frameworks, wie \textit{WPF}, \textit{UWP} oder \textit{Winforms} verwendet. Die Funktionalität ist im
+zu Webbasierenden Markup-Language mächtiger, da diese von Haus aus eigene
+Funktionen mitbringt, die in anderen Sprachen via Skripte möglich sind. Ein Beispiel
+wäre hier die Button Klick Funktion, die bereits implementiert ist und in der
+Code-Behind, also die C\#-Klassendatei hinter der XAML, verwendet werden kann.
+Ein anderes wichtiges Beispiel wäre hier die Funktionalität der Converter. Das sind
+besondere Klassen, die User Input nimmt und dann die Werte auf Beispielsweise
+Datentypen konvertiert.
+
+\begin{figure}[hbt!]
+ \centering
+ \includegraphics[width=\textwidth]{xaml-code}
+ \caption{Beispiel für XAML}
+ \label{fig:xamlcode}
+\end{figure}
+
+\subsubsection{Geräte/Hardware spezifisch}
+Je nach Gerät oder Betriebssystem können hier die Komponenten unterschiedlich
+sein, da Xamarin auf die API des Systems zugreift. Je nachdem wie Spezifisch diese
+Zugriffe sind, wie Beispielsweise das zugreifen auf Internen Speicher oder Funktionen
+wie \textit{ApplePay}, müssen Plattformspezifisch implementiert werden.
+
+\subsubsection{Requirements}
+\paragraph{Betriebssysteme}
+Da Microsoft mit dotnet einen Schritt in die \textit{Crossplattformwelt} gewagt hat, kann \textit{Xamarin} auf jedes Betriebssystem, \textit{UNIX} oder \textit{Windows}, verwendet werden und auch dort mit Entwickelt. Leider gibt es eine Einschränkungen bei den Apple Betriebssystemen. Hier muss das System welches \textit{XCodes} ausführen kann verwendet werden, damit der \textit{Xamarin/C\#} Code kompiliert wird und dann auf die Geräte deployed werden kann.
+
+Eine gängige Methode bei der Xamarin Entwicklung ist es Visual Studio auf einem Mac zu benutzen um Android und iOS Apps zu entwickeln. Sollte außerdem eine version für Windows Geräte benötigt werden wird häufig zusätzlich Windows auf dem Mac emuliert um den Xamarin Code so zu kompilieren.
+
+\paragraph{Benötigte(s) Tool/IDE}
+Zur Xamarin Entwicklung eignen sich prinzipiell eine Vielzahl von IDEs, wobei einige Funktionen mit Kommandozeilen Befehlen ergänzt werden müssten.
+
+Für eine einfachere Erfahrung werden Microsofts eigene IDEs Visual Studio bzw. Visual Studio Code empfohlen. Beide verfügen über eine kostenfreie Community Version.
+
+Visual Studio bietet zusätzlich einen einfachen Emulator von mobilen Geräten, wodurch eine Entwicklung ohne das jeweilige Gerät mit einer großen Auswahl an Gerätetypen und API Leveln möglich ist.
+
+Während unserer Entwicklung  und auch für die Aufgaben haben wir uns  deshalb für Visual Studio entschieden. Außerdem bietet der Visual Studio Installer eine einfaches und verständliches Interface zum Downloaden und Anpassen der benötigten Frameworks.
+
+% \include{xallary}
+
+\section{Bewertung}
+
+\subsection{Integrierbarkeit in den Entwicklungsprozess}
+
+Mit Xamarin lassen sich einfach Cross Platform Apps entwickeln. Dank der Struktur, von globalen Klassen und Plattform abhängigen Klassen, können Platform spezifische Funktionen jeweils für z.B. iOS oder Android implementiert werden.
+
+Bei der Cross Plattform Entwicklung mit Xamarin wird eine App entwickelt und mit jeweiligen nativen Funktionen ergänzt statt funktionsgleiche aber programmiertechnisch völlig unterschiedliche Apps in ihrer herkömmlichen Entwicklungsumgebung zu entwickeln, wie es ohne Cross Plattform der Fall wäre.
+
+Eine einfache App mit ohne spezielle Funktionen kann schnell erstellt werden und funktioniert für die beiden Plattformen ohne ergänzt werden zu müssen. Eine App, die viel spezifische Funktionen von der jeweiligen Plattform verwendet braucht zwar mehr Aufmerksamkeit für jede spezifische Plattform, allerdings bietet Xamarin dennoch ein erhebliches Ersparnis gegenüber der herkömmlichen App-Entwicklung für die einzelnen Betriebssysteme.
+
+Außerdem werden viele Entwickler die vergleichsweise modernen Technologien von C\# und Visual Studio gegenüber herkömmlichen Methoden bevorzugen. Funktionalitäten wie Lambdas oder Generics können mit Xamarin in C\# wie gewohnt verwendet werden und werden ohne Funktionalitätsverlust in die jeweilige Sprache übersetzt, auch wenn beispielsweise Android Java selbst nicht über diese verfügt.
+
+
+\subsection{Zukunftssicherheit}
+Xamarin verbindet die populären Sprachen C\# und XAML mit der App-Entwicklung für die größten Hersteller von mobilen Geräten, Xamarin füllt eine Nische, die auch langfristig erhalten bleiben sollte, vorausgesetzt es erhält genügend Support.
+
+Da Xamarin von Microsoft betrieben wird kann davon ausgegangen werden, dass es weitergeführt wird, solang ein ausreichendes Interesse besteht. Erst kürzlich wurde die Version 5 von Xamarin.Forms veröffentlicht.
+
+Microsoft hat mit .Net maui bereits einen Nachfolger für Xamarin in Arbeit, allerdings basiert dieser weiterhin stark auf Xamarin. Sich als Entwickler mit Xamarin auseinanderzusetzen ist also weiterhin sinnig, da sich das gesammelte Wissen leicht auf maui übertragen lassen wird.
+
+Aus diesem Grund kann Xamarin weiterhin als Zukunftssicher betrachtet werden, obwohl ein Nachfolger angekündigt wurde.
+
+\section{Kosten/Lizenzen}
+Xamarin ist ein Open Source Projekt unter der MIT-Lizenz, die den freien und kostenlosen Umgang mit der Software gewährleistet.
+
+Lediglich bei der IDE könnten potentielle Kosten entstehen, sollte sich ein Entwickler oder Betrieb für einen Premium Service entscheiden.
+
+Die von Microsoft empfohlene IDE Visual Studio bietet beispielsweise Professional und Enterprise Versionen für 45\$ bzw. 250\$ im Monat.
+
+Allerdings sind auch kostenfreie Optionen wie Visual Studio Community verfügbar und bieten einen ausreichenden Funktionsumfang für die Xamarin Entwicklung.
+
+
+\section{Fazit}
+Xamarin bietet eine benutzerfreundliche Cross Plattform Entwicklung, mit der Entwickler von mobilen Applikationen viel Zeit und Mühe einsparen können, ohne auf Funktionalität verzichten zu müssen.
+Mit C\# und Microsofts Visual Studio ermöglicht Xamarin App Entwicklung mit moderner Programmiersprache und IDE die viele Vorteile gegenüber der herkömmlichen Entwicklungsumgebung wie z.B. Android Java enthält und so vielen Entwicklern eine attraktive Alternative zur nativen App-Entwicklung bietet.
+Allgemein bietet Xamarin eine verständliche und praktische Möglichkeit für Cross Plattform Entwicklung von Mobilen Applikationen und sollte daher generell von Entwicklern in Betracht gezogen werden, besonders wenn diese bereits über Kenntnisse von C\# und XAML verfügen und eine Applikation für mehr als eine Plattform entwickelt werden muss.
+
+
+
+\section{Literatur / Kommentierte Links}
+
+\begin{itemize}
+ \item \href{https://github.com/xamarin}{Xamarin GitHub}
+ \item \href{https://docs.microsoft.com/de-de/xamarin/}{Docs Microsoft Xamarin}
+ \item \href{https://www.zdnet.de/88267682/microsoft-macht-xamarin-sdk-unter-freier-mit-lizenz-verfuegbar/}{ZDNET Online Artikel}
+\end{itemize}
+
+\end{document}

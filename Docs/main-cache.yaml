@@ -1,0 +1,3800 @@
+version: 0.12.2
+filePath: main.tex
+options:
+  $BIBINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  $TEXINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  bibtexEngine: bibtex
+  cleanPatterns:
+    - '**/*.aux'
+    - '**/*.aux.bak'
+    - '**/*.bbl'
+    - '**/*.bcf'
+    - '**/*.blg'
+    - '**/*.dvi'
+    - '**/*.fdb_latexmk'
+    - '**/*.fls'
+    - '**/*.idx'
+    - '**/*.idx.bak'
+    - '**/*.ilg'
+    - '**/*.ind'
+    - '**/*.lof'
+    - '**/*.log'
+    - '**/*.lol'
+    - '**/*.lot'
+    - '**/*.nav'
+    - '**/*.out'
+    - '**/*.pdf'
+    - '**/*.ps'
+    - '**/*.snm'
+    - '**/*.synctex.gz'
+    - '**/*.toc'
+    - '/**/_minted-${JOB}'
+    - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+    - /missfont.log
+    - /texput.log
+    - /texput.aux
+  dviToPdfEngine: xdvipdfmx
+  engine: pdflatex
+  epstopdfBoundingBox: default
+  epstopdfOutputPath: $DIR_0/$NAME_0.pdf
+  indexAutomaticRanges: true
+  indexEngine: makeindex
+  indexOrdering: word
+  indexSorting: default
+  knitrConcordance: true
+  knitrOutputPath: $JOB.tex
+  lhs2texStyle: poly
+  literateAgdaEngine: agda
+  literateHaskellEngine: lhs2TeX
+  loadCache: true
+  loadUserOptions: true
+  outputFormat: pdf
+  phaseCycles: 20
+  pweaveCacheDirectory: pweave-cache-for-$JOB
+  pweaveFigureDirectory: pweave-figures-for-$JOB
+  pweaveKernel: python3
+  pweaveOutputFormat: tex
+  pweaveOutputPath: $JOB.tex
+  saveCache: true
+  severity: info
+  validateCache: true
+  synctex: true
+  copyTargetsToRoot: true
+  outputDirectory: ''
+  intermediatePostScript: false
+  $PATH: >-
+    %SystemDrive%\texlive\2017\bin\win32;%SystemDrive%\texlive\2016\bin\win32;%SystemDrive%\texlive\2015\bin\win32;%ProgramFiles%\MiKTeX
+    2.9\miktex\bin\x64;%ProgramFiles(x86)%\MiKTeX 2.9\miktex\bin;$PATH
+  shellEscape: enabled
+files:
+  dicy-instance.yaml-ParsedYAML:
+    timeStamp: 2021-05-22T16:12:05.933Z
+    jobNames: []
+    value:
+      severity: info
+    type: ParsedYAML
+  dicy.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  main.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  main.tex-ParsedLaTeXMagic:
+    timeStamp: 2021-05-22T14:50:11.730Z
+    jobNames: []
+    value: {}
+    type: ParsedLaTeXMagic
+  'C:\Users\Nick\AppData\Roaming\dicy\config.yaml-ParsedYAML':
+    timeStamp: 2021-05-22T15:29:47.715Z
+    jobNames: []
+    value:
+      synctex: true
+      engine: pdflatex
+      severity: warning
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns:
+        - '**/*.aux'
+        - '**/*.aux.bak'
+        - '**/*.bbl'
+        - '**/*.bcf'
+        - '**/*.blg'
+        - '**/*.dvi'
+        - '**/*.fdb_latexmk'
+        - '**/*.fls'
+        - '**/*.idx'
+        - '**/*.idx.bak'
+        - '**/*.ilg'
+        - '**/*.ind'
+        - '**/*.lof'
+        - '**/*.log'
+        - '**/*.lol'
+        - '**/*.lot'
+        - '**/*.nav'
+        - '**/*.out'
+        - '**/*.pdf'
+        - '**/*.ps'
+        - '**/*.snm'
+        - '**/*.synctex.gz'
+        - '**/*.toc'
+        - '/**/_minted-${JOB}'
+        - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+        - /missfont.log
+        - /texput.log
+        - /texput.aux
+      intermediatePostScript: false
+      $PATH: >-
+        %SystemDrive%\texlive\2017\bin\win32;%SystemDrive%\texlive\2016\bin\win32;%SystemDrive%\texlive\2015\bin\win32;%ProgramFiles%\MiKTeX
+        2.9\miktex\bin\x64;%ProgramFiles(x86)%\MiKTeX 2.9\miktex\bin;$PATH
+      shellEscape: enabled
+    type: ParsedYAML
+  main.tex:
+    timeStamp: 2021-05-22T17:18:05.223Z
+    jobNames: []
+    hash: OB7hCZxFksI2XtRW+JerdwRubqkQy+LQ9X5kD2RV/dY=
+    type: LaTeX
+    subType: article
+  'C:\Users\Nick\AppData\Roaming\dicy\config.yaml':
+    timeStamp: 2021-05-22T16:12:05.941Z
+    jobNames: []
+    type: YAML
+  x.y-Nil:
+    jobNames: []
+    type: Nil
+  main.fls-ParsedFileListing:
+    timeStamp: 2021-05-22T17:15:45.029Z
+    jobNames: []
+    value:
+      messages: []
+      inputs:
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm'
+        - 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm'
+        - 'C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii'
+        - 'C:\Program Files\MiKTeX\tex\generic\atbegshi\atbegshi.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\babel\babel.def'
+        - 'C:\Program Files\MiKTeX\tex\generic\babel\babel.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\babel\txtbabel.def'
+        - 'C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\pdfescape\pdfescape.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+        - 'C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg'
+        - 'C:\Program Files\MiKTeX\tex\latex\atveryend\atveryend.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\auxhook\auxhook.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\babel-german\ngerman.ldf'
+        - 'C:\Program Files\MiKTeX\tex\latex\babel-german\ngermanb.ldf'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\article.cls'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\atbegshi-ltx.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\atveryend-ltx.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\base\size12.clo'
+        - 'C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\hycolor\hycolor.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def'
+        - 'C:\Program Files\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\refcount\refcount.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\relsize\relsize.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty'
+        - 'C:\Program Files\MiKTeX\tex\latex\url\url.sty'
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+        - >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+        - 'C:\Users\Nick\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt'
+        - 'C:\Users\Nick\AppData\Local\MiKTeX\pdftex\config\pdftex.map'
+        - images\xamarin-logo.pdf
+        - images\xaml-code.png
+        - main.aux
+        - main.out
+        - main.tex
+        - main.toc
+      outputs:
+        - main.aux
+        - main.log
+        - main.out
+        - main.pdf
+        - main.toc
+      calls: []
+    type: ParsedFileListing
+  main.log-ParsedLaTeXLog:
+    timeStamp: 2021-05-22T17:15:47.459Z
+    jobNames: []
+    value:
+      messages:
+        - name: pdfTeX
+          severity: info
+          text: inputenc 2020/08/01 v1.3d Input encoding file
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty'
+          log:
+            file: main.log
+            range:
+              start: 24
+              end: 24
+        - name: pdfTeX
+          severity: info
+          text: fontenc 2020/08/10 v2.0s Standard LaTeX package
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty'
+          log:
+            file: main.log
+            range:
+              start: 28
+              end: 28
+        - name: pdfTeX
+          severity: info
+          text: babel 2021/01/26 3.53 The Babel package
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\babel\babel.sty'
+          log:
+            file: main.log
+            range:
+              start: 30
+              end: 30
+        - severity: info
+          name: pdfTeX
+          category: Package babel
+          text: Making " an active character
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\babel-german\ngermanb.ldf'
+            range:
+              start: 122
+              end: 122
+          log:
+            file: main.log
+            range:
+              start: 52
+              end: 52
+        - name: pdfTeX
+          severity: info
+          text: hyphenat 2009/09/02 v2.3c hyphenation utilities
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty'
+          log:
+            file: main.log
+            range:
+              start: 54
+              end: 54
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \_
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty'
+            range:
+              start: 43
+              end: 43
+          log:
+            file: main.log
+            range:
+              start: 56
+              end: 56
+        - name: pdfTeX
+          severity: info
+          text: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+          log:
+            file: main.log
+            range:
+              start: 58
+              end: 58
+        - name: pdfTeX
+          severity: info
+          text: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 60
+              end: 60
+        - name: pdfTeX
+          severity: info
+          text: iftex 2020/03/06 v1.0d TeX engine tests
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty'
+          log:
+            file: main.log
+            range:
+              start: 62
+              end: 62
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX
+            (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 64
+              end: 65
+        - name: pdfTeX
+          severity: info
+          text: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty'
+          log:
+            file: main.log
+            range:
+              start: 67
+              end: 67
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@primitive is available.
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 69
+              end: 69
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@ifprimitive is available.
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 70
+              end: 70
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdfdraftmode found.
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 71
+              end: 71
+        - name: pdfTeX
+          severity: info
+          text: keyval 2014/10/28 v1.15 key=value parser (DPC)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty'
+          log:
+            file: main.log
+            range:
+              start: 73
+              end: 73
+        - name: pdfTeX
+          severity: info
+          text: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty'
+          log:
+            file: main.log
+            range:
+              start: 76
+              end: 76
+        - name: pdfTeX
+          severity: info
+          text: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty'
+          log:
+            file: main.log
+            range:
+              start: 78
+              end: 78
+        - name: pdfTeX
+          severity: info
+          text: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\pdfescape\pdfescape.sty'
+          log:
+            file: main.log
+            range:
+              start: 80
+              end: 80
+        - name: pdfTeX
+          severity: info
+          text: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hycolor\hycolor.sty'
+          log:
+            file: main.log
+            range:
+              start: 82
+              end: 82
+        - name: pdfTeX
+          severity: info
+          text: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty'
+          log:
+            file: main.log
+            range:
+              start: 84
+              end: 84
+        - name: pdfTeX
+          severity: info
+          text: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\auxhook\auxhook.sty'
+          log:
+            file: main.log
+            range:
+              start: 86
+              end: 86
+        - name: pdfTeX
+          severity: info
+          text: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty'
+          log:
+            file: main.log
+            range:
+              start: 88
+              end: 88
+        - name: pdfTeX
+          severity: info
+          text: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty'
+          log:
+            file: main.log
+            range:
+              start: 101
+              end: 101
+        - name: pdfTeX
+          severity: info
+          text: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty'
+          log:
+            file: main.log
+            range:
+              start: 103
+              end: 103
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4192
+              end: 4192
+          log:
+            file: main.log
+            range:
+              start: 111
+              end: 111
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4197
+              end: 4197
+          log:
+            file: main.log
+            range:
+              start: 112
+              end: 112
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4200
+              end: 4200
+          log:
+            file: main.log
+            range:
+              start: 113
+              end: 113
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Plain pages OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4207
+              end: 4207
+          log:
+            file: main.log
+            range:
+              start: 114
+              end: 114
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Backreferencing OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4212
+              end: 4212
+          log:
+            file: main.log
+            range:
+              start: 115
+              end: 115
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Implicit mode ON; LaTeX internals redefined.
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+          log:
+            file: main.log
+            range:
+              start: 116
+              end: 116
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Bookmarks ON
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4445
+              end: 4445
+          log:
+            file: main.log
+            range:
+              start: 117
+              end: 117
+        - name: pdfTeX
+          severity: info
+          text: 'url 2013/09/16 ver 3.4 Verb mode for urls, etc.'
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\url\url.sty'
+          log:
+            file: main.log
+            range:
+              start: 121
+              end: 121
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \url
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 4804
+              end: 4804
+          log:
+            file: main.log
+            range:
+              start: 123
+              end: 123
+        - name: pdfTeX
+          severity: info
+          text: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty'
+          log:
+            file: main.log
+            range:
+              start: 126
+              end: 126
+        - name: pdfTeX
+          severity: info
+          text: >-
+            bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers
+            (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty'
+          log:
+            file: main.log
+            range:
+              start: 128
+              end: 129
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6075
+              end: 6075
+          log:
+            file: main.log
+            range:
+              start: 134
+              end: 134
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6080
+              end: 6080
+          log:
+            file: main.log
+            range:
+              start: 135
+              end: 135
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6083
+              end: 6083
+          log:
+            file: main.log
+            range:
+              start: 136
+              end: 136
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: backreferencing OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6090
+              end: 6090
+          log:
+            file: main.log
+            range:
+              start: 137
+              end: 137
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6095
+              end: 6095
+          log:
+            file: main.log
+            range:
+              start: 138
+              end: 138
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring with OCG OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6100
+              end: 6100
+          log:
+            file: main.log
+            range:
+              start: 139
+              end: 139
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: PDF/A mode OFF
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6105
+              end: 6105
+          log:
+            file: main.log
+            range:
+              start: 140
+              end: 140
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6145
+              end: 6145
+          log:
+            file: main.log
+            range:
+              start: 141
+              end: 141
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+            range:
+              start: 6149
+              end: 6149
+          log:
+            file: main.log
+            range:
+              start: 142
+              end: 142
+        - name: pdfTeX
+          severity: info
+          text: >-
+            atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi
+            package
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\base\atbegshi-ltx.sty'
+          log:
+            file: main.log
+            range:
+              start: 144
+              end: 145
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Driver (autodetected): hpdftex.'
+          source:
+            file: main.tex
+          log:
+            file: main.log
+            range:
+              start: 152
+              end: 152
+        - name: pdfTeX
+          severity: info
+          text: >-
+            atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery
+            package
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\base\atveryend-ltx.sty'
+          log:
+            file: main.log
+            range:
+              start: 156
+              end: 157
+        - name: pdfTeX
+          severity: info
+          text: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+          source:
+            file: >-
+              C:\Program
+              Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+          log:
+            file: main.log
+            range:
+              start: 163
+              end: 163
+        - name: pdfTeX
+          severity: info
+          text: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+          source:
+            file: >-
+              C:\Program
+              Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+          log:
+            file: main.log
+            range:
+              start: 165
+              end: 165
+        - severity: info
+          name: pdfTeX
+          category: Package uniquecounter
+          text: New unique counter `rerunfilecheck'
+          source:
+            file: >-
+              C:\Program
+              Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+            range:
+              start: 286
+              end: 286
+          log:
+            file: main.log
+            range:
+              start: 167
+              end: 168
+        - name: pdfTeX
+          severity: info
+          text: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty'
+          log:
+            file: main.log
+            range:
+              start: 172
+              end: 172
+        - name: pdfTeX
+          severity: info
+          text: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty'
+          log:
+            file: main.log
+            range:
+              start: 174
+              end: 174
+        - name: pdfTeX
+          severity: info
+          text: relsize 2013/03/29 ver 4.1
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\relsize\relsize.sty'
+          log:
+            file: main.log
+            range:
+              start: 177
+              end: 177
+        - name: pdfTeX
+          severity: info
+          text: 'graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty'
+          log:
+            file: main.log
+            range:
+              start: 179
+              end: 179
+        - name: pdfTeX
+          severity: info
+          text: 'graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty'
+          log:
+            file: main.log
+            range:
+              start: 181
+              end: 181
+        - name: pdfTeX
+          severity: info
+          text: trig 2016/01/03 v1.10 sin cos tan (DPC)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty'
+          log:
+            file: main.log
+            range:
+              start: 183
+              end: 183
+        - severity: info
+          name: pdfTeX
+          category: Package graphics
+          text: 'Driver file: pdftex.def'
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty'
+            range:
+              start: 105
+              end: 105
+          log:
+            file: main.log
+            range:
+              start: 187
+              end: 187
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OML/cmm/m/it ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 200
+              end: 201
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMS/cmsy/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 202
+              end: 203
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OT1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 204
+              end: 205
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for T1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 206
+              end: 207
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for TS1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 208
+              end: 209
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMX/cmex/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 210
+              end: 211
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for U/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 212
+              end: 213
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for PD1/pdf/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 214
+              end: 215
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for PU/pdf/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 216
+              end: 217
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 218
+              end: 218
+        - name: pdfTeX
+          severity: info
+          text: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty'
+          log:
+            file: main.log
+            range:
+              start: 220
+              end: 220
+        - name: pdfTeX
+          severity: info
+          text: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\refcount\refcount.sty'
+          log:
+            file: main.log
+            range:
+              start: 222
+              end: 222
+        - name: pdfTeX
+          severity: info
+          text: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+          source:
+            file: >-
+              C:\Program
+              Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+          log:
+            file: main.log
+            range:
+              start: 224
+              end: 224
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 228
+              end: 228
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 229
+              end: 229
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \nameref
+          source:
+            file: main.tex
+            range:
+              start: 24
+              end: 24
+          log:
+            file: main.log
+            range:
+              start: 230
+              end: 230
+        - name: pdfTeX
+          severity: info
+          text: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty'
+          log:
+            file: main.log
+            range:
+              start: 250
+              end: 250
+        - severity: info
+          name: pdfTeX
+          category: Package epstopdf-base
+          text: Redefining graphics rule for `.eps'
+          source:
+            file: 'C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty'
+            range:
+              start: 485
+              end: 485
+          log:
+            file: main.log
+            range:
+              start: 251
+              end: 252
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <14.4>.
+          source:
+            file: main.tex
+            range:
+              start: 28
+              end: 28
+          log:
+            file: main.log
+            range:
+              start: 254
+              end: 255
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <7>.
+          source:
+            file: main.tex
+            range:
+              start: 28
+              end: 28
+          log:
+            file: main.log
+            range:
+              start: 256
+              end: 257
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: >-
+            ./images//xamarin-logo.pdf used Requested size: 350.99762pt x
+            312.60751pt.
+          source:
+            file: main.tex
+            range:
+              start: 31
+              end: 31
+          log:
+            file: main.log
+            range:
+              start: 261
+              end: 262
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <12>.
+          source:
+            file: main.toc
+            range:
+              start: 3
+              end: 3
+          log:
+            file: main.log
+            range:
+              start: 267
+              end: 268
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <8>.
+          source:
+            file: main.toc
+            range:
+              start: 3
+              end: 3
+          log:
+            file: main.log
+            range:
+              start: 269
+              end: 270
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <6>.
+          source:
+            file: main.toc
+            range:
+              start: 3
+              end: 3
+          log:
+            file: main.log
+            range:
+              start: 271
+              end: 272
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: './images//xaml-code.png used Requested size: 390.0pt x 198.96062pt.'
+          source:
+            file: main.tex
+            range:
+              start: 65
+              end: 65
+          log:
+            file: main.log
+            range:
+              start: 281
+              end: 282
+        - severity: info
+          name: pdfTeX
+          category: Package rerunfilecheck
+          text: >-
+            File `main.out' has not changed. Checksum:
+            FECFEF4DEB86F096653B3E9A7194E8E1;1823.
+          source:
+            file: main.tex
+          log:
+            file: main.log
+            range:
+              start: 285
+              end: 286
+      inputs: []
+      outputs:
+        - main.pdf
+      calls: []
+    type: ParsedLaTeXLog
+  main.aux:
+    timeStamp: 2021-05-22T17:18:07.948Z
+    jobNames: []
+    hash: YD2dEZ6MW2cFUugzIgoE6yBAF9re2TJMGe4ZVSl/KkU=
+    type: LaTeXAuxilary
+  main.fls:
+    timeStamp: 2021-05-22T17:18:08.014Z
+    jobNames: []
+    hash: ctASWttwnDBfK/nWUfZVKIi9lCQ1YtoenxTFKKemNkU=
+    type: FileListing
+  main.log:
+    timeStamp: 2021-05-22T17:18:08.011Z
+    jobNames: []
+    hash: 58fPpfi4gOMwuolPhM43zwUQubhkIuZWYrE9mGI9sjg=
+    type: LaTeXLog
+    subType: pdfTeX
+  main.aux-ParsedLaTeXAuxilary:
+    timeStamp: 2021-05-22T17:15:45.019Z
+    jobNames: []
+    value:
+      commands:
+        - relax
+        - providecommand
+        - providecommand
+        - '@nameuse'
+        - catcode
+        - providecommand
+        - HyperFirstAtBeginDocument
+        - global
+        - gdef
+        - global
+        - gdef
+        - gdef
+        - AtEndDocument
+        - let
+        - let
+        - fi
+        - fi
+        - global
+        - gdef
+        - providecommand
+        - providecommand
+        - babel@aux
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - newlabel
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - '@writefile'
+        - gdef
+    type: ParsedLaTeXAuxilary
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm':
+    timeStamp: 2001-06-20T18:32:38.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm':
+    timeStamp: 2001-06-20T18:32:40.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm':
+    timeStamp: 2001-06-20T18:32:42.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm':
+    timeStamp: 2001-06-20T18:32:44.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm':
+    timeStamp: 2001-06-20T18:35:26.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm':
+    timeStamp: 2001-06-20T18:35:28.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm':
+    timeStamp: 2001-06-20T18:35:28.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm':
+    timeStamp: 2001-06-20T18:35:30.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm':
+    timeStamp: 2001-06-20T18:38:44.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm':
+    timeStamp: 2001-06-20T18:41:48.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii':
+    timeStamp: 2020-01-30T13:15:58.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\atbegshi\atbegshi.sty':
+    timeStamp: 2019-12-05T18:38:20.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\babel\babel.def':
+    timeStamp: 2021-01-26T16:28:45.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\babel\babel.sty':
+    timeStamp: 2021-01-26T16:28:45.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\babel\txtbabel.def':
+    timeStamp: 2021-01-26T16:28:45.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty':
+    timeStamp: 2019-12-15T18:13:22.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty':
+    timeStamp: 2019-12-09T21:22:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty':
+    timeStamp: 2019-12-15T18:13:58.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty':
+    timeStamp: 2019-12-15T18:14:26.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty':
+    timeStamp: 2020-03-06T19:36:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty':
+    timeStamp: 2019-12-03T18:58:28.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty':
+    timeStamp: 2019-12-15T18:16:04.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty':
+    timeStamp: 2019-12-19T13:48:24.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty':
+    timeStamp: 2019-12-15T18:17:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty':
+    timeStamp: 2020-10-03T14:33:29.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\pdfescape\pdfescape.sty':
+    timeStamp: 2019-12-09T21:25:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty':
+    timeStamp: 2020-06-29T15:12:20.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty':
+    timeStamp: 2019-12-15T18:20:12.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg':
+    timeStamp: 2006-02-15T00:00:00.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\atveryend\atveryend.sty':
+    timeStamp: 2019-12-11T21:51:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\auxhook\auxhook.sty':
+    timeStamp: 2019-12-16T23:25:32.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\babel-german\ngerman.ldf':
+    timeStamp: 2021-03-03T14:41:11.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\babel-german\ngermanb.ldf':
+    timeStamp: 2021-03-03T14:41:11.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\base\article.cls':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: LaTeXClass
+  'C:\Program Files\MiKTeX\tex\latex\base\atbegshi-ltx.sty':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\base\atveryend-ltx.sty':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\base\size12.clo':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty':
+    timeStamp: 2020-01-26T12:25:42.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty':
+    timeStamp: 2020-10-05T11:35:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg':
+    timeStamp: 2016-06-14T08:51:32.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def':
+    timeStamp: 2020-10-05T06:09:58.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty':
+    timeStamp: 2020-10-03T17:12:06.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty':
+    timeStamp: 2020-10-03T17:12:06.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty':
+    timeStamp: 2020-10-03T17:12:06.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty':
+    timeStamp: 2020-10-03T17:12:06.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\hycolor\hycolor.sty':
+    timeStamp: 2020-01-30T10:39:52.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty':
+    timeStamp: 2009-09-02T13:30:20.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty':
+    timeStamp: 2020-10-09T07:21:36.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def':
+    timeStamp: 2021-02-18T14:30:12.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty':
+    timeStamp: 2019-12-03T18:58:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty':
+    timeStamp: 2021-03-17T10:16:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\refcount\refcount.sty':
+    timeStamp: 2019-12-15T18:19:12.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\relsize\relsize.sty':
+    timeStamp: 2013-04-06T10:27:10.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty':
+    timeStamp: 2019-12-05T18:41:22.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\url\url.sty':
+    timeStamp: 2013-12-31T11:47:32.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk':
+    timeStamp: 2021-05-22T14:14:30.035Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk':
+    timeStamp: 2021-05-22T14:14:32.558Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk':
+    timeStamp: 2021-05-22T14:14:33.980Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk':
+    timeStamp: 2021-05-22T14:14:36.568Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk':
+    timeStamp: 2021-05-22T14:14:31.314Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk':
+    timeStamp: 2021-05-22T14:14:35.220Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk':
+    timeStamp: 2021-05-22T14:14:28.771Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk':
+    timeStamp: 2021-05-22T14:14:27.519Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt':
+    timeStamp: 2021-05-22T14:11:05.099Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\pdftex\config\pdftex.map':
+    timeStamp: 2021-05-22T13:54:29.966Z
+    jobNames: []
+  main.out:
+    timeStamp: 2021-05-22T17:18:07.949Z
+    jobNames: []
+    hash: Ib1r0O+KfyX/CP96S6NgwOYNVXXznMQ9RTN2lSCRgdg=
+    type: OUT
+  main.toc:
+    timeStamp: 2021-05-22T17:18:07.958Z
+    jobNames: []
+    hash: InhTOGv4VjyUQYem9p4K6DxDqUH1b4OJ1cml9KEyrlk=
+    type: TableOfContents
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecsi1200.tfm':
+    timeStamp: 2001-06-20T18:36:12.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm':
+    timeStamp: 2001-06-20T18:37:16.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecss1440.tfm':
+    timeStamp: 2001-06-20T18:37:18.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecss1728.tfm':
+    timeStamp: 2001-06-20T18:37:18.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecss2074.tfm':
+    timeStamp: 2001-06-20T18:37:20.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecsx1200.tfm':
+    timeStamp: 2001-06-20T18:37:56.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecsx1440.tfm':
+    timeStamp: 2001-06-20T18:37:58.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecsx1728.tfm':
+    timeStamp: 2001-06-20T18:38:00.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecsx2074.tfm':
+    timeStamp: 2001-06-20T18:38:02.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcss1200.tfm':
+    timeStamp: 2001-06-20T18:42:18.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\base\t1cmss.fd':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: FontDescription
+  'C:\Program Files\MiKTeX\tex\latex\base\ts1cmss.fd':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: FontDescription
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsi1200.pk':
+    timeStamp: 2021-05-22T15:25:05.858Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk':
+    timeStamp: 2021-05-22T15:25:08.039Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1440.pk':
+    timeStamp: 2021-05-22T15:25:11.505Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk':
+    timeStamp: 2021-05-22T15:25:09.123Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk':
+    timeStamp: 2021-05-22T15:25:06.969Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1728.pk':
+    timeStamp: 2021-05-22T15:25:10.318Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2074.pk':
+    timeStamp: 2021-05-22T15:25:12.684Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1200.pk':
+    timeStamp: 2021-05-22T15:25:04.776Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec.sty':
+    timeStamp: 2020-02-21T15:57:52.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty':
+    timeStamp: 2021-02-18T14:40:36.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse-generic.tex':
+    timeStamp: 2020-10-27T13:11:38.000Z
+    jobNames: []
+    type: TeX
+  'C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty':
+    timeStamp: 2020-10-27T13:11:38.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\babel\luababel.def':
+    timeStamp: 2021-01-26T16:28:45.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\hyph-utf8\loadhyph\loadhyph-de-1996.tex':
+    timeStamp: 2020-03-25T22:08:00.000Z
+    jobNames: []
+    type: TeX
+  'C:\Program Files\MiKTeX\tex\generic\hyph-utf8\patterns\tex\hyph-de-1996.tex':
+    timeStamp: 2020-03-25T22:08:00.000Z
+    jobNames: []
+    type: TeX
+  'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.lua':
+    timeStamp: 2020-06-29T15:12:20.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\stringenc\stringenc.sty':
+    timeStamp: 2019-11-30T09:24:00.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\CaseFolding.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\PropList.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\ScriptExtensions.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\Scripts.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\SpecialCasing.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\UnicodeData.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\generic\unicode-data\WordBreakProperty.txt':
+    timeStamp: 2020-10-26T12:54:34.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\base\ltluatex.lua':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\base\ts1cmr.fd':
+    timeStamp: 2021-01-08T15:45:46.000Z
+    jobNames: []
+    type: FontDescription
+  'C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec-luatex.sty':
+    timeStamp: 2020-02-21T15:57:52.000Z
+    jobNames: []
+    type: LaTeXStyle
+  'C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec.cfg':
+    timeStamp: 2020-02-21T15:57:52.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\fontspec\fontspec.lua':
+    timeStamp: 2020-02-21T15:57:52.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\graphics-def\luatex.def':
+    timeStamp: 2020-10-05T06:09:58.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\hyperref\hluatex.def':
+    timeStamp: 2021-02-11T10:56:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-luatex.def':
+    timeStamp: 2021-02-18T14:30:12.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.lua':
+    timeStamp: 2021-02-18T14:40:36.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\latexconfig\lualatexquotejobname.lua':
+    timeStamp: 2011-06-15T22:01:52.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-basic-merged.lua':
+    timeStamp: 2020-12-31T11:41:00.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-basic.lua':
+    timeStamp: 2020-12-31T11:41:22.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-compat.lua':
+    timeStamp: 2020-01-09T17:53:30.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-extended-merged.lua':
+    timeStamp: 2020-12-31T11:41:00.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-extended.lua':
+    timeStamp: 2020-12-31T11:41:22.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs.lua':
+    timeStamp: 2020-12-31T11:41:22.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\fontloader-2021-01-07.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\fontloader-basics-gen.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-auxiliary.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-case.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-colors.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-configuration.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-database.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-embolden.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-fallback.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-features.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-glyphlist.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-harf-define.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-harf-plug.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-init.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-letterspace.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-loaders.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-log.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-main.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-multiscript.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-notdef.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-parsers.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-resolvers.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-scripts.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-status.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-suppress.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-szss.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-tounicode.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-unicode.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload.lua':
+    timeStamp: 2021-01-16T11:11:06.000Z
+    jobNames: []
+  'C:\ProgramData\MiKTeX\tex\generic\config\language.dat':
+    timeStamp: 2021-05-22T13:48:29.824Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-bold.lua':
+    timeStamp: 2021-05-22T15:28:57.130Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-regular.lua':
+    timeStamp: 2021-05-22T15:28:56.571Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdana.lua':
+    timeStamp: 2021-05-22T15:28:57.304Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanab.lua':
+    timeStamp: 2021-05-22T15:28:57.625Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanai.lua':
+    timeStamp: 2021-05-22T15:28:57.765Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanaz.lua':
+    timeStamp: 2021-05-22T15:28:57.484Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\names\luaotfload-lookup-cache.lua':
+    timeStamp: 2021-05-22T15:28:58.015Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\names\luaotfload-lookup-cache.luc':
+    timeStamp: 2021-05-22T15:28:58.015Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\names\luaotfload-names.luc':
+    timeStamp: 2021-05-22T15:28:56.479Z
+    jobNames: []
+  'C:\WINDOWS\Fonts\verdana.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  'C:\WINDOWS\Fonts\verdanab.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  'C:\WINDOWS\Fonts\verdanai.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  'C:\WINDOWS\Fonts\verdanaz.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmono10-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmono10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmono12-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmono8-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmono9-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonocaps10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonocaps10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonolt10-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonolt10-boldoblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonolt10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonolt10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoltcond10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoltcond10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoprop10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoprop10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoproplt10-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoproplt10-boldoblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoproplt10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoproplt10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmmonoslant10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman10-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman10-bolditalic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman10-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman12-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman12-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman12-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman17-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman5-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman5-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman6-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman6-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman7-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman7-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman7-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman8-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman8-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman8-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman9-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman9-italic.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmroman9-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromancaps10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromancaps10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromandemi10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromandemi10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromandunh10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromandunh10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant10-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant12-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant17-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant8-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanslant9-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmromanunsl10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans10-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans10-boldoblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans12-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans12-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans17-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans17-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans8-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans8-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans9-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsans9-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansdemicond10-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansdemicond10-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansquot8-bold.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansquot8-boldoblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansquot8-oblique.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\program files\miktex\fonts\opentype\public\lm\lmsansquot8-regular.otf':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  '\\?\c:\users\nick\appdata\local\microsoft\windows\fonts\bellota-regular.ttf':
+    timeStamp: 2020-01-15T23:00:00.000Z
+    jobNames: []
+  '\\?\c:\users\nick\appdata\local\microsoft\windows\fonts\raleway-italic-variablefont_wght.ttf':
+    timeStamp: 2012-09-06T22:00:00.000Z
+    jobNames: []
+  '\\?\c:\users\nick\appdata\local\microsoft\windows\fonts\raleway-variablefont_wght.ttf':
+    timeStamp: 2012-09-06T22:00:00.000Z
+    jobNames: []
+  '\\?\c:\windows\fonts\agencyb.ttf':
+    timeStamp: 2020-05-04T13:24:19.350Z
+    jobNames: []
+  '\\?\c:\windows\fonts\agencyr.ttf':
+    timeStamp: 2020-05-04T13:24:19.359Z
+    jobNames: []
+  '\\?\c:\windows\fonts\alger.ttf':
+    timeStamp: 2020-05-04T13:24:19.350Z
+    jobNames: []
+  '\\?\c:\windows\fonts\antquab.ttf':
+    timeStamp: 2020-05-04T13:24:19.360Z
+    jobNames: []
+  '\\?\c:\windows\fonts\antquabi.ttf':
+    timeStamp: 2020-05-04T13:24:19.359Z
+    jobNames: []
+  '\\?\c:\windows\fonts\antquai.ttf':
+    timeStamp: 2020-05-04T13:24:19.357Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arial.ttf':
+    timeStamp: 2019-12-07T09:08:26.097Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialbd.ttf':
+    timeStamp: 2019-12-07T09:08:26.097Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialbi.ttf':
+    timeStamp: 2019-12-07T09:08:26.097Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ariali.ttf':
+    timeStamp: 2019-12-07T09:08:26.097Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialn.ttf':
+    timeStamp: 2020-05-04T13:24:19.351Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialnb.ttf':
+    timeStamp: 2020-05-04T13:24:19.358Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialnbi.ttf':
+    timeStamp: 2020-05-04T13:24:19.356Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arialni.ttf':
+    timeStamp: 2020-05-04T13:24:19.355Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ariblk.ttf':
+    timeStamp: 2019-12-07T09:08:26.097Z
+    jobNames: []
+  '\\?\c:\windows\fonts\arlrdbd.ttf':
+    timeStamp: 2020-05-04T13:24:19.354Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bahnschrift.ttf':
+    timeStamp: 2019-12-07T09:08:26.115Z
+    jobNames: []
+  '\\?\c:\windows\fonts\baskvill.ttf':
+    timeStamp: 2020-05-04T13:24:19.353Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bauhs93.ttf':
+    timeStamp: 2020-05-04T13:24:19.353Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bell.ttf':
+    timeStamp: 2020-05-04T13:24:19.352Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bellb.ttf':
+    timeStamp: 2020-05-04T13:24:19.351Z
+    jobNames: []
+  '\\?\c:\windows\fonts\belli.ttf':
+    timeStamp: 2020-05-04T13:24:19.353Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bernhc.ttf':
+    timeStamp: 2020-05-04T13:24:19.352Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bkant.ttf':
+    timeStamp: 2020-05-04T13:24:19.487Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_b.ttf':
+    timeStamp: 2020-05-04T13:24:19.496Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_bi.ttf':
+    timeStamp: 2020-05-04T13:24:19.488Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_blai.ttf':
+    timeStamp: 2020-05-04T13:24:19.498Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_blar.ttf':
+    timeStamp: 2020-05-04T13:24:19.496Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_cb.ttf':
+    timeStamp: 2020-05-04T13:24:19.495Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_cbi.ttf':
+    timeStamp: 2020-05-04T13:24:19.488Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_ci.ttf':
+    timeStamp: 2020-05-04T13:24:19.496Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_cr.ttf':
+    timeStamp: 2020-05-04T13:24:19.494Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_i.ttf':
+    timeStamp: 2020-05-04T13:24:19.494Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_pstc.ttf':
+    timeStamp: 2020-05-04T13:24:19.493Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bod_r.ttf':
+    timeStamp: 2020-05-04T13:24:19.493Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bookos.ttf':
+    timeStamp: 2020-05-04T13:24:19.492Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bookosb.ttf':
+    timeStamp: 2020-05-04T13:24:19.490Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bookosbi.ttf':
+    timeStamp: 2020-05-04T13:24:19.489Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bookosi.ttf':
+    timeStamp: 2020-05-04T13:24:19.491Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bradhitc.ttf':
+    timeStamp: 2020-05-04T13:24:19.664Z
+    jobNames: []
+  '\\?\c:\windows\fonts\britanic.ttf':
+    timeStamp: 2020-05-04T13:24:19.675Z
+    jobNames: []
+  '\\?\c:\windows\fonts\brlnsb.ttf':
+    timeStamp: 2020-05-04T13:24:19.664Z
+    jobNames: []
+  '\\?\c:\windows\fonts\brlnsdb.ttf':
+    timeStamp: 2020-05-04T13:24:19.676Z
+    jobNames: []
+  '\\?\c:\windows\fonts\brlnsr.ttf':
+    timeStamp: 2020-05-04T13:24:19.675Z
+    jobNames: []
+  '\\?\c:\windows\fonts\broadw.ttf':
+    timeStamp: 2020-05-04T13:24:19.674Z
+    jobNames: []
+  '\\?\c:\windows\fonts\brushsci.ttf':
+    timeStamp: 2020-05-04T13:24:19.664Z
+    jobNames: []
+  '\\?\c:\windows\fonts\bssym7.ttf':
+    timeStamp: 2020-05-04T13:24:19.674Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibri.ttf':
+    timeStamp: 2019-12-07T09:08:26.115Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibrib.ttf':
+    timeStamp: 2019-12-07T09:08:26.115Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibrii.ttf':
+    timeStamp: 2019-12-07T09:08:26.115Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibril.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibrili.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calibriz.ttf':
+    timeStamp: 2019-12-07T09:08:26.115Z
+    jobNames: []
+  '\\?\c:\windows\fonts\califb.ttf':
+    timeStamp: 2020-05-04T13:24:19.810Z
+    jobNames: []
+  '\\?\c:\windows\fonts\califi.ttf':
+    timeStamp: 2020-05-04T13:24:19.819Z
+    jobNames: []
+  '\\?\c:\windows\fonts\califr.ttf':
+    timeStamp: 2020-05-04T13:24:19.810Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calist.ttf':
+    timeStamp: 2020-05-04T13:24:19.820Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calistb.ttf':
+    timeStamp: 2020-05-04T13:24:19.819Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calistbi.ttf':
+    timeStamp: 2020-05-04T13:24:19.818Z
+    jobNames: []
+  '\\?\c:\windows\fonts\calisti.ttf':
+    timeStamp: 2020-05-04T13:24:19.811Z
+    jobNames: []
+  '\\?\c:\windows\fonts\cambria.ttc':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\cambriab.ttf':
+    timeStamp: 2019-12-07T09:08:37.363Z
+    jobNames: []
+  '\\?\c:\windows\fonts\cambriai.ttf':
+    timeStamp: 2019-12-07T09:08:37.363Z
+    jobNames: []
+  '\\?\c:\windows\fonts\cambriaz.ttf':
+    timeStamp: 2019-12-07T09:08:37.363Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candara.ttf':
+    timeStamp: 2019-12-07T09:08:37.378Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candarab.ttf':
+    timeStamp: 2019-12-07T09:08:37.378Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candarai.ttf':
+    timeStamp: 2019-12-07T09:08:37.378Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candaral.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candarali.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\candaraz.ttf':
+    timeStamp: 2019-12-07T09:08:37.378Z
+    jobNames: []
+  '\\?\c:\windows\fonts\castelar.ttf':
+    timeStamp: 2020-05-04T13:24:19.818Z
+    jobNames: []
+  '\\?\c:\windows\fonts\censcbk.ttf':
+    timeStamp: 2020-05-04T13:24:19.817Z
+    jobNames: []
+  '\\?\c:\windows\fonts\centaur.ttf':
+    timeStamp: 2020-05-04T13:24:19.816Z
+    jobNames: []
+  '\\?\c:\windows\fonts\century.ttf':
+    timeStamp: 2020-05-04T13:24:19.816Z
+    jobNames: []
+  '\\?\c:\windows\fonts\chiller.ttf':
+    timeStamp: 2020-05-04T13:24:19.815Z
+    jobNames: []
+  '\\?\c:\windows\fonts\colonna.ttf':
+    timeStamp: 2020-05-04T13:24:19.814Z
+    jobNames: []
+  '\\?\c:\windows\fonts\comic.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\comicbd.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\comici.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\comicz.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\consola.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\consolab.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\consolai.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\consolaz.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\constan.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\constanb.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\constani.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\constanz.ttf':
+    timeStamp: 2019-12-07T09:08:37.566Z
+    jobNames: []
+  '\\?\c:\windows\fonts\coopbl.ttf':
+    timeStamp: 2020-05-04T13:24:19.813Z
+    jobNames: []
+  '\\?\c:\windows\fonts\coprgtb.ttf':
+    timeStamp: 2020-05-04T13:24:19.811Z
+    jobNames: []
+  '\\?\c:\windows\fonts\coprgtl.ttf':
+    timeStamp: 2020-05-04T13:24:19.813Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbel.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbelb.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbeli.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbell.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbelli.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\corbelz.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\cour.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\courbd.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\courbi.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\couri.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\curlz___.ttf':
+    timeStamp: 2020-05-04T13:24:19.813Z
+    jobNames: []
+  '\\?\c:\windows\fonts\dubai-bold.ttf':
+    timeStamp: 2020-05-04T13:24:19.812Z
+    jobNames: []
+  '\\?\c:\windows\fonts\dubai-light.ttf':
+    timeStamp: 2020-05-04T13:24:19.952Z
+    jobNames: []
+  '\\?\c:\windows\fonts\dubai-medium.ttf':
+    timeStamp: 2020-05-04T13:24:19.963Z
+    jobNames: []
+  '\\?\c:\windows\fonts\dubai-regular.ttf':
+    timeStamp: 2020-05-04T13:24:19.953Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ebrima.ttf':
+    timeStamp: 2019-12-07T09:08:26.128Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ebrimabd.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\elephnt.ttf':
+    timeStamp: 2020-05-04T13:24:19.963Z
+    jobNames: []
+  '\\?\c:\windows\fonts\elephnti.ttf':
+    timeStamp: 2020-05-04T13:24:19.962Z
+    jobNames: []
+  '\\?\c:\windows\fonts\engr.ttf':
+    timeStamp: 2020-05-04T13:24:19.961Z
+    jobNames: []
+  '\\?\c:\windows\fonts\erasbd.ttf':
+    timeStamp: 2020-05-04T13:24:19.953Z
+    jobNames: []
+  '\\?\c:\windows\fonts\erasdemi.ttf':
+    timeStamp: 2020-05-04T13:24:19.962Z
+    jobNames: []
+  '\\?\c:\windows\fonts\eraslght.ttf':
+    timeStamp: 2020-05-04T13:24:19.961Z
+    jobNames: []
+  '\\?\c:\windows\fonts\erasmd.ttf':
+    timeStamp: 2020-05-04T13:24:19.960Z
+    jobNames: []
+  '\\?\c:\windows\fonts\felixti.ttf':
+    timeStamp: 2020-05-04T13:24:19.960Z
+    jobNames: []
+  '\\?\c:\windows\fonts\forte.ttf':
+    timeStamp: 2020-05-04T13:24:19.960Z
+    jobNames: []
+  '\\?\c:\windows\fonts\frabk.ttf':
+    timeStamp: 2020-05-04T13:24:19.959Z
+    jobNames: []
+  '\\?\c:\windows\fonts\frabkit.ttf':
+    timeStamp: 2020-05-04T13:24:19.957Z
+    jobNames: []
+  '\\?\c:\windows\fonts\fradm.ttf':
+    timeStamp: 2020-05-04T13:24:19.954Z
+    jobNames: []
+  '\\?\c:\windows\fonts\fradmcn.ttf':
+    timeStamp: 2020-05-04T13:24:19.958Z
+    jobNames: []
+  '\\?\c:\windows\fonts\fradmit.ttf':
+    timeStamp: 2020-05-04T13:24:19.956Z
+    jobNames: []
+  '\\?\c:\windows\fonts\frahv.ttf':
+    timeStamp: 2020-05-04T13:24:19.955Z
+    jobNames: []
+  '\\?\c:\windows\fonts\frahvit.ttf':
+    timeStamp: 2020-05-04T13:24:20.103Z
+    jobNames: []
+  '\\?\c:\windows\fonts\framd.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\framdcn.ttf':
+    timeStamp: 2020-05-04T13:24:20.114Z
+    jobNames: []
+  '\\?\c:\windows\fonts\framdit.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\freescpt.ttf':
+    timeStamp: 2020-05-04T13:24:20.104Z
+    jobNames: []
+  '\\?\c:\windows\fonts\frscript.ttf':
+    timeStamp: 2020-05-04T13:24:20.114Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ftltlt.ttf':
+    timeStamp: 2020-05-04T13:24:20.113Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gabriola.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gadugi.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gadugib.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gara.ttf':
+    timeStamp: 2020-05-04T13:24:20.242Z
+    jobNames: []
+  '\\?\c:\windows\fonts\garabd.ttf':
+    timeStamp: 2020-05-04T13:24:20.252Z
+    jobNames: []
+  '\\?\c:\windows\fonts\garait.ttf':
+    timeStamp: 2020-05-04T13:24:20.244Z
+    jobNames: []
+  '\\?\c:\windows\fonts\georgia.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\georgiab.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\georgiai.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\georgiaz.ttf':
+    timeStamp: 2019-12-07T09:08:26.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gigi.ttf':
+    timeStamp: 2020-05-04T13:24:20.253Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gil_____.ttf':
+    timeStamp: 2020-05-04T13:24:20.250Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gilb____.ttf':
+    timeStamp: 2020-05-04T13:24:20.249Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gilbi___.ttf':
+    timeStamp: 2020-05-04T13:24:20.244Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gilc____.ttf':
+    timeStamp: 2020-05-04T13:24:20.250Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gili____.ttf':
+    timeStamp: 2020-05-04T13:24:20.249Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gillubcd.ttf':
+    timeStamp: 2020-05-04T13:24:20.248Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gilsanub.ttf':
+    timeStamp: 2020-05-04T13:24:20.248Z
+    jobNames: []
+  '\\?\c:\windows\fonts\glecb.ttf':
+    timeStamp: 2020-05-04T13:24:20.247Z
+    jobNames: []
+  '\\?\c:\windows\fonts\glsnecb.ttf':
+    timeStamp: 2020-05-04T13:24:20.247Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gothic.ttf':
+    timeStamp: 2020-05-04T13:24:20.245Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gothicb.ttf':
+    timeStamp: 2020-05-04T13:24:20.246Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gothicbi.ttf':
+    timeStamp: 2020-05-04T13:24:20.386Z
+    jobNames: []
+  '\\?\c:\windows\fonts\gothici.ttf':
+    timeStamp: 2020-05-04T13:24:20.395Z
+    jobNames: []
+  '\\?\c:\windows\fonts\goudos.ttf':
+    timeStamp: 2020-05-04T13:24:20.387Z
+    jobNames: []
+  '\\?\c:\windows\fonts\goudosb.ttf':
+    timeStamp: 2020-05-04T13:24:20.396Z
+    jobNames: []
+  '\\?\c:\windows\fonts\goudosi.ttf':
+    timeStamp: 2020-05-04T13:24:20.394Z
+    jobNames: []
+  '\\?\c:\windows\fonts\goudysto.ttf':
+    timeStamp: 2020-05-04T13:24:20.393Z
+    jobNames: []
+  '\\?\c:\windows\fonts\harlowsi.ttf':
+    timeStamp: 2020-05-04T13:24:20.387Z
+    jobNames: []
+  '\\?\c:\windows\fonts\harngton.ttf':
+    timeStamp: 2020-05-04T13:24:20.394Z
+    jobNames: []
+  '\\?\c:\windows\fonts\hatten.ttf':
+    timeStamp: 2020-05-04T13:24:20.393Z
+    jobNames: []
+  '\\?\c:\windows\fonts\himalaya.ttf':
+    timeStamp: 2019-12-07T09:08:27.534Z
+    jobNames: []
+  '\\?\c:\windows\fonts\holomdl2.ttf':
+    timeStamp: 2019-12-07T14:54:35.469Z
+    jobNames: []
+  '\\?\c:\windows\fonts\htowert.ttf':
+    timeStamp: 2020-05-04T13:24:20.392Z
+    jobNames: []
+  '\\?\c:\windows\fonts\htowerti.ttf':
+    timeStamp: 2020-05-04T13:24:20.392Z
+    jobNames: []
+  '\\?\c:\windows\fonts\impact.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\imprisha.ttf':
+    timeStamp: 2020-05-04T13:24:20.391Z
+    jobNames: []
+  '\\?\c:\windows\fonts\infroman.ttf':
+    timeStamp: 2020-05-04T13:24:20.391Z
+    jobNames: []
+  '\\?\c:\windows\fonts\inkfree.ttf':
+    timeStamp: 2019-12-07T09:08:27.519Z
+    jobNames: []
+  '\\?\c:\windows\fonts\itcblkad.ttf':
+    timeStamp: 2020-05-04T13:24:20.390Z
+    jobNames: []
+  '\\?\c:\windows\fonts\itcedscr.ttf':
+    timeStamp: 2020-05-04T13:24:20.387Z
+    jobNames: []
+  '\\?\c:\windows\fonts\itckrist.ttf':
+    timeStamp: 2020-05-04T13:24:20.390Z
+    jobNames: []
+  '\\?\c:\windows\fonts\javatext.ttf':
+    timeStamp: 2019-12-07T09:08:27.519Z
+    jobNames: []
+  '\\?\c:\windows\fonts\jokerman.ttf':
+    timeStamp: 2020-05-04T13:24:20.390Z
+    jobNames: []
+  '\\?\c:\windows\fonts\juice___.ttf':
+    timeStamp: 2020-05-04T13:24:20.389Z
+    jobNames: []
+  '\\?\c:\windows\fonts\kunstler.ttf':
+    timeStamp: 2020-05-04T13:24:20.388Z
+    jobNames: []
+  '\\?\c:\windows\fonts\l_10646.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\latinwd.ttf':
+    timeStamp: 2020-05-04T13:24:20.388Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lbrite.ttf':
+    timeStamp: 2020-05-04T13:24:20.537Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lbrited.ttf':
+    timeStamp: 2020-05-04T13:24:20.548Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lbritedi.ttf':
+    timeStamp: 2020-05-04T13:24:20.538Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lbritei.ttf':
+    timeStamp: 2020-05-04T13:24:20.549Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lcallig.ttf':
+    timeStamp: 2020-05-04T13:24:20.548Z
+    jobNames: []
+  '\\?\c:\windows\fonts\leelauib.ttf':
+    timeStamp: 2019-12-07T09:08:27.519Z
+    jobNames: []
+  '\\?\c:\windows\fonts\leelawui.ttf':
+    timeStamp: 2019-12-07T09:08:27.519Z
+    jobNames: []
+  '\\?\c:\windows\fonts\leeluisl.ttf':
+    timeStamp: 2019-12-07T09:08:27.519Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lfax.ttf':
+    timeStamp: 2020-05-04T13:24:20.547Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lfaxd.ttf':
+    timeStamp: 2020-05-04T13:24:20.546Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lfaxdi.ttf':
+    timeStamp: 2020-05-04T13:24:20.546Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lfaxi.ttf':
+    timeStamp: 2020-05-04T13:24:20.545Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lhandw.ttf':
+    timeStamp: 2020-05-04T13:24:20.545Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lsans.ttf':
+    timeStamp: 2020-05-04T13:24:20.544Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lsansd.ttf':
+    timeStamp: 2020-05-04T13:24:20.543Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lsansdi.ttf':
+    timeStamp: 2020-05-04T13:24:20.539Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lsansi.ttf':
+    timeStamp: 2020-05-04T13:24:20.544Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ltype.ttf':
+    timeStamp: 2020-05-04T13:24:20.543Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ltypeb.ttf':
+    timeStamp: 2020-05-04T13:24:20.542Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ltypebo.ttf':
+    timeStamp: 2020-05-04T13:24:20.542Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ltypeo.ttf':
+    timeStamp: 2020-05-04T13:24:20.542Z
+    jobNames: []
+  '\\?\c:\windows\fonts\lucon.ttf':
+    timeStamp: 2019-12-07T09:08:49.192Z
+    jobNames: []
+  '\\?\c:\windows\fonts\magnetob.ttf':
+    timeStamp: 2020-05-04T13:24:20.541Z
+    jobNames: []
+  '\\?\c:\windows\fonts\maian.ttf':
+    timeStamp: 2020-05-04T13:24:20.541Z
+    jobNames: []
+  '\\?\c:\windows\fonts\malgun.ttf':
+    timeStamp: 2019-12-07T09:08:27.534Z
+    jobNames: []
+  '\\?\c:\windows\fonts\malgunbd.ttf':
+    timeStamp: 2019-12-07T09:09:34.147Z
+    jobNames: []
+  '\\?\c:\windows\fonts\malgunsl.ttf':
+    timeStamp: 2019-12-07T09:09:34.162Z
+    jobNames: []
+  '\\?\c:\windows\fonts\marlett.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\maturasc.ttf':
+    timeStamp: 2020-05-04T13:24:20.540Z
+    jobNames: []
+  '\\?\c:\windows\fonts\micross.ttf':
+    timeStamp: 2019-12-07T09:08:37.582Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mingliub.ttc':
+    timeStamp: 2019-12-07T09:08:37.348Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mistral.ttf':
+    timeStamp: 2020-05-04T13:24:20.540Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mmrtext.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mmrtextb.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mod20.ttf':
+    timeStamp: 2020-05-04T13:24:20.684Z
+    jobNames: []
+  '\\?\c:\windows\fonts\monbaiti.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msgothic.ttc':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msjh.ttc':
+    timeStamp: 2019-12-07T09:08:27.551Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msjhbd.ttc':
+    timeStamp: 2019-12-07T09:09:34.084Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msjhl.ttc':
+    timeStamp: 2019-12-07T09:09:34.068Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msyh.ttc':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msyhbd.ttc':
+    timeStamp: 2019-12-07T09:09:34.055Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msyhl.ttc':
+    timeStamp: 2019-12-07T09:09:34.037Z
+    jobNames: []
+  '\\?\c:\windows\fonts\msyi.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mtcorsva.ttf':
+    timeStamp: 2020-05-04T13:24:20.695Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mtextra.ttf':
+    timeStamp: 2020-05-04T13:24:20.692Z
+    jobNames: []
+  '\\?\c:\windows\fonts\mvboli.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\niageng.ttf':
+    timeStamp: 2020-05-04T13:24:20.692Z
+    jobNames: []
+  '\\?\c:\windows\fonts\niagsol.ttf':
+    timeStamp: 2020-05-04T13:24:20.686Z
+    jobNames: []
+  '\\?\c:\windows\fonts\nirmala.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\nirmalab.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\nirmalas.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ntailu.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ntailub.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ocraext.ttf':
+    timeStamp: 2020-05-04T13:24:20.692Z
+    jobNames: []
+  '\\?\c:\windows\fonts\oldengl.ttf':
+    timeStamp: 2020-05-04T13:24:20.691Z
+    jobNames: []
+  '\\?\c:\windows\fonts\onyx.ttf':
+    timeStamp: 2020-05-04T13:24:20.691Z
+    jobNames: []
+  '\\?\c:\windows\fonts\outlook.ttf':
+    timeStamp: 2020-05-04T13:24:20.690Z
+    jobNames: []
+  '\\?\c:\windows\fonts\pala.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\palab.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\palabi.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\palai.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\palscri.ttf':
+    timeStamp: 2020-05-04T13:24:20.690Z
+    jobNames: []
+  '\\?\c:\windows\fonts\papyrus.ttf':
+    timeStamp: 2020-05-04T13:24:20.690Z
+    jobNames: []
+  '\\?\c:\windows\fonts\parchm.ttf':
+    timeStamp: 2020-05-04T13:24:20.688Z
+    jobNames: []
+  '\\?\c:\windows\fonts\per_____.ttf':
+    timeStamp: 2020-05-04T13:24:20.686Z
+    jobNames: []
+  '\\?\c:\windows\fonts\perb____.ttf':
+    timeStamp: 2020-05-04T13:24:20.689Z
+    jobNames: []
+  '\\?\c:\windows\fonts\perbi___.ttf':
+    timeStamp: 2020-05-04T13:24:20.687Z
+    jobNames: []
+  '\\?\c:\windows\fonts\peri____.ttf':
+    timeStamp: 2020-05-04T13:24:20.823Z
+    jobNames: []
+  '\\?\c:\windows\fonts\pertibd.ttf':
+    timeStamp: 2020-05-04T13:24:20.833Z
+    jobNames: []
+  '\\?\c:\windows\fonts\pertili.ttf':
+    timeStamp: 2020-05-04T13:24:20.823Z
+    jobNames: []
+  '\\?\c:\windows\fonts\phagspa.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\phagspab.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\playbill.ttf':
+    timeStamp: 2020-05-04T13:24:20.834Z
+    jobNames: []
+  '\\?\c:\windows\fonts\poorich.ttf':
+    timeStamp: 2020-05-04T13:24:20.833Z
+    jobNames: []
+  '\\?\c:\windows\fonts\pristina.ttf':
+    timeStamp: 2020-05-04T13:24:20.832Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rage.ttf':
+    timeStamp: 2020-05-04T13:24:20.824Z
+    jobNames: []
+  '\\?\c:\windows\fonts\ravie.ttf':
+    timeStamp: 2020-05-04T13:24:20.833Z
+    jobNames: []
+  '\\?\c:\windows\fonts\refsan.ttf':
+    timeStamp: 2020-05-04T13:24:20.832Z
+    jobNames: []
+  '\\?\c:\windows\fonts\refspcl.ttf':
+    timeStamp: 2020-05-04T13:24:20.830Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rocc____.ttf':
+    timeStamp: 2020-05-04T13:24:20.830Z
+    jobNames: []
+  '\\?\c:\windows\fonts\roccb___.ttf':
+    timeStamp: 2020-05-04T13:24:20.829Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rock.ttf':
+    timeStamp: 2020-05-04T13:24:20.829Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rockb.ttf':
+    timeStamp: 2020-05-04T13:24:20.828Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rockbi.ttf':
+    timeStamp: 2020-05-04T13:24:20.824Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rockeb.ttf':
+    timeStamp: 2020-05-04T13:24:20.829Z
+    jobNames: []
+  '\\?\c:\windows\fonts\rocki.ttf':
+    timeStamp: 2020-05-04T13:24:20.828Z
+    jobNames: []
+  '\\?\c:\windows\fonts\schlbkb.ttf':
+    timeStamp: 2020-05-04T13:24:20.827Z
+    jobNames: []
+  '\\?\c:\windows\fonts\schlbkbi.ttf':
+    timeStamp: 2020-05-04T13:24:20.826Z
+    jobNames: []
+  '\\?\c:\windows\fonts\schlbki.ttf':
+    timeStamp: 2020-05-04T13:24:20.825Z
+    jobNames: []
+  '\\?\c:\windows\fonts\scriptbl.ttf':
+    timeStamp: 2020-05-04T13:24:20.968Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segmdl2.ttf':
+    timeStamp: 2019-12-07T09:08:27.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoepr.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeprb.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoesc.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoescb.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeui.ttf':
+    timeStamp: 2019-12-07T09:08:27.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeuib.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeuii.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeuil.ttf':
+    timeStamp: 2019-12-07T09:08:27.605Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeuisl.ttf':
+    timeStamp: 2019-12-07T09:08:27.605Z
+    jobNames: []
+  '\\?\c:\windows\fonts\segoeuiz.ttf':
+    timeStamp: 2019-12-07T09:08:27.581Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguibl.ttf':
+    timeStamp: 2019-12-07T09:08:27.605Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguibli.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguiemj.ttf':
+    timeStamp: 2019-12-07T09:08:27.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguihis.ttf':
+    timeStamp: 2019-12-07T09:08:27.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguili.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguisb.ttf':
+    timeStamp: 2019-12-07T09:08:27.605Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguisbi.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguisli.ttf':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\seguisym.ttf':
+    timeStamp: 2019-12-07T09:08:27.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\showg.ttf':
+    timeStamp: 2020-05-04T13:24:20.969Z
+    jobNames: []
+  '\\?\c:\windows\fonts\simsun.ttc':
+    timeStamp: 2019-12-07T09:08:27.628Z
+    jobNames: []
+  '\\?\c:\windows\fonts\simsunb.ttf':
+    timeStamp: 2019-12-07T09:08:37.363Z
+    jobNames: []
+  '\\?\c:\windows\fonts\sitka.ttc':
+    timeStamp: 2019-12-07T09:08:37.613Z
+    jobNames: []
+  '\\?\c:\windows\fonts\sitkab.ttc':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\sitkai.ttc':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\sitkaz.ttc':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\snap____.ttf':
+    timeStamp: 2020-05-04T13:24:20.979Z
+    jobNames: []
+  '\\?\c:\windows\fonts\stencil.ttf':
+    timeStamp: 2020-05-04T13:24:20.975Z
+    jobNames: []
+  '\\?\c:\windows\fonts\sylfaen.ttf':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\symbol.ttf':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tahoma.ttf':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tahomabd.ttf':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\taile.ttf':
+    timeStamp: 2019-12-07T09:08:27.628Z
+    jobNames: []
+  '\\?\c:\windows\fonts\taileb.ttf':
+    timeStamp: 2019-12-07T09:08:37.631Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tcb_____.ttf':
+    timeStamp: 2020-05-04T13:24:20.975Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tcbi____.ttf':
+    timeStamp: 2020-05-04T13:24:20.969Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tccb____.ttf':
+    timeStamp: 2020-05-04T13:24:20.975Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tcceb.ttf':
+    timeStamp: 2020-05-04T13:24:20.974Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tccm____.ttf':
+    timeStamp: 2020-05-04T13:24:20.974Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tcm_____.ttf':
+    timeStamp: 2020-05-04T13:24:20.973Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tcmi____.ttf':
+    timeStamp: 2020-05-04T13:24:20.973Z
+    jobNames: []
+  '\\?\c:\windows\fonts\tempsitc.ttf':
+    timeStamp: 2020-05-04T13:24:20.972Z
+    jobNames: []
+  '\\?\c:\windows\fonts\times.ttf':
+    timeStamp: 2019-12-07T09:08:27.628Z
+    jobNames: []
+  '\\?\c:\windows\fonts\timesbd.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\timesbi.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\timesi.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\trebuc.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\trebucbd.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\trebucbi.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\trebucit.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\verdana.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\verdanab.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\verdanai.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\verdanaz.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\vineritc.ttf':
+    timeStamp: 2020-05-04T13:24:20.971Z
+    jobNames: []
+  '\\?\c:\windows\fonts\vivaldii.ttf':
+    timeStamp: 2020-05-04T13:24:20.970Z
+    jobNames: []
+  '\\?\c:\windows\fonts\vladimir.ttf':
+    timeStamp: 2020-05-04T13:24:20.971Z
+    jobNames: []
+  '\\?\c:\windows\fonts\webdings.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\wingding.ttf':
+    timeStamp: 2019-12-07T09:08:27.645Z
+    jobNames: []
+  '\\?\c:\windows\fonts\wingdng2.ttf':
+    timeStamp: 2020-05-04T13:24:20.970Z
+    jobNames: []
+  '\\?\c:\windows\fonts\wingdng3.ttf':
+    timeStamp: 2020-05-04T13:24:21.123Z
+    jobNames: []
+  '\\?\c:\windows\fonts\yugothb.ttc':
+    timeStamp: 2019-12-07T09:09:34.131Z
+    jobNames: []
+  '\\?\c:\windows\fonts\yugothl.ttc':
+    timeStamp: 2019-12-07T09:09:34.131Z
+    jobNames: []
+  '\\?\c:\windows\fonts\yugothm.ttc':
+    timeStamp: 2019-12-07T09:08:27.659Z
+    jobNames: []
+  '\\?\c:\windows\fonts\yugothr.ttc':
+    timeStamp: 2019-12-07T09:09:34.115Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-bold.luc':
+    timeStamp: 2021-05-22T15:28:57.135Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-regular.luc':
+    timeStamp: 2021-05-22T15:28:56.575Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdana.luc':
+    timeStamp: 2021-05-22T15:28:57.312Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanab.luc':
+    timeStamp: 2021-05-22T15:28:57.632Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanai.luc':
+    timeStamp: 2021-05-22T15:28:57.772Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\verdanaz.luc':
+    timeStamp: 2021-05-22T15:28:57.491Z
+    jobNames: []
+  'C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\names\luaotfload-names.lua.gz':
+    timeStamp: 2021-05-22T15:28:56.447Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm':
+    timeStamp: 2009-10-07T18:04:00.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd':
+    timeStamp: 2009-10-30T19:04:00.000Z
+    jobNames: []
+    type: FontDescription
+  main.synctex.gz:
+    timeStamp: 2021-05-22T17:18:08.011Z
+    jobNames: []
+    hash: J0Ui2cA7kQ71QNvBUJmksNL/VgeY9S3IpFSsFR/KZ40=
+    type: SyncTeX
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm':
+    timeStamp: 2006-01-09T00:04:13.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb':
+    timeStamp: 2009-07-14T18:37:46.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb':
+    timeStamp: 2009-07-14T18:37:47.000Z
+    jobNames: []
+  'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb':
+    timeStamp: 2009-07-14T18:37:47.000Z
+    jobNames: []
+  main.pdf:
+    timeStamp: 2021-05-22T17:18:08.010Z
+    jobNames: []
+    hash: XORJXizdQvr6WtudbiUEp7R3fBza+h1QSYivAHC+0sw=
+    type: PortableDocumentFormat
+  images\xamarin-logo.pdf:
+    timeStamp: 2021-05-22T14:56:16.567Z
+    jobNames: []
+    hash: 3FrgkA00b2K16P4YCy4780GVhTUl9VqBjtHR2REJyyA=
+    type: PortableDocumentFormat
+  images\xaml-code.png:
+    timeStamp: 2021-05-22T17:08:20.507Z
+    jobNames: []
+    hash: XzCgYbvFaJwkSXiBf+lP6t6G644BfI0Js1CKrjWReAg=
+  xallary.aux:
+    timeStamp: 2021-05-22T17:14:59.215Z
+    jobNames: []
+    hash: n3fPIM/3fOrzbf9UPO9Wxckf2BojT1B7tcA9MMF5jS0=
+    type: LaTeXAuxilary
+  xallary.aux-ParsedLaTeXAuxilary:
+    timeStamp: 2021-05-22T17:14:59.358Z
+    jobNames: []
+    value:
+      commands:
+        - relax
+        - providecommand
+        - '@setckpt'
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+        - setcounter
+    type: ParsedLaTeXAuxilary
+rules:
+  - name: ApplyOptions
+    command: load
+    phase: initialize
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: main.yaml-ParsedYAML
+        type: default
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: 'C:\Users\Nick\AppData\Roaming\dicy\config.yaml-ParsedYAML'
+        type: default
+    outputs: []
+  - name: LoadAndValidateCache
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: Migrate
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ApplyOptions
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: main.yaml-ParsedYAML
+        type: default
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: 'C:\Users\Nick\AppData\Roaming\dicy\config.yaml-ParsedYAML'
+        type: default
+    outputs: []
+  - name: ParseOptionsFile
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: 'C:\Users\Nick\AppData\Roaming\dicy\config.yaml'
+        type: default
+    outputs:
+      - file: 'C:\Users\Nick\AppData\Roaming\dicy\config.yaml-ParsedYAML'
+        type: default
+  - name: ParseLaTeXMagic
+    command: load
+    phase: execute
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+    outputs:
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+  - name: AssignJobNames
+    command: load
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: FindLogFiles
+    command: build
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: LaTeX
+    command: build
+    phase: execute
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+      - file: main.fls-ParsedFileListing
+        type: default
+      - file: main.log-ParsedLaTeXLog
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\babel\babel.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\babel\babel.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\babel\luababel.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\etexcmds\etexcmds.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\generic\hyph-utf8\loadhyph\loadhyph-de-1996.tex
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\generic\hyph-utf8\patterns\tex\hyph-de-1996.tex
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\infwarerr\infwarerr.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\pdfescape\pdfescape.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\stringenc\stringenc.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\CaseFolding.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\PropList.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\ScriptExtensions.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\Scripts.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\SpecialCasing.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\UnicodeData.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\unicode-data\WordBreakProperty.txt'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\auxhook\auxhook.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\babel-german\ngerman.ldf'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\babel-german\ngermanb.ldf'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\article.cls'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\atbegshi-ltx.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\atveryend-ltx.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\ltluatex.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\size12.clo'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\base\ts1cmr.fd'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics-def\luatex.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hycolor\hycolor.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hluatex.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyphenat\hyphenat.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\kvoptions\kvoptions.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-luatex.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\latexconfig\lualatexquotejobname.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\parskip\parskip.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\refcount\refcount.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\relsize\relsize.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\url\url.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-basic-merged.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-basic.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-compat.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-extended-merged.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs-extended.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\lualibs\lualibs.lua'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\fontloader-2021-01-07.lua
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\fontloader-basics-gen.lua
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-auxiliary.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-case.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-colors.lua'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\luaotfload-configuration.lua
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-database.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-embolden.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-fallback.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-features.lua'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\luaotfload-harf-define.lua
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-harf-plug.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-init.lua'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\luaotfload-letterspace.lua
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-loaders.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-log.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-main.lua'
+        type: default
+      - file: >-
+          C:\Program
+          Files\MiKTeX\tex\luatex\luaotfload\luaotfload-multiscript.lua
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-notdef.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-parsers.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-resolvers.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-scripts.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-status.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-suppress.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-szss.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-tounicode.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload-unicode.lua'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\luatex\luaotfload\luaotfload.lua'
+        type: default
+      - file: 'C:\ProgramData\MiKTeX\tex\generic\config\language.dat'
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\fonts\otl\lmroman12-regular.luc
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\luatex-cache\generic\names\luaotfload-names.luc
+        type: default
+      - file: main.aux
+        type: default
+      - file: main.out
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\atbegshi\atbegshi.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\generic\babel\txtbabel.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\atveryend\atveryend.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def'
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+        type: default
+      - file: >-
+          C:\Users\Nick\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+        type: default
+      - file: 'C:\Users\Nick\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt'
+        type: default
+      - file: 'C:\Users\Nick\AppData\Local\MiKTeX\pdftex\config\pdftex.map'
+        type: default
+      - file: main.toc
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb'
+        type: default
+      - file: 'C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb'
+        type: default
+      - file: images\xamarin-logo.pdf
+        type: default
+      - file: images\xaml-code.png
+        type: default
+      - file: xallary.aux
+        type: default
+    outputs:
+      - file: main.aux
+        type: default
+      - file: main.log
+        type: default
+      - file: main.fls
+        type: default
+      - file: main.synctex.gz
+        type: target
+      - file: main.out
+        type: default
+      - file: main.toc
+        type: default
+      - file: main.pdf
+        type: target
+      - file: xallary.aux
+        type: default
+  - name: ParseLaTeXAuxilary
+    command: build
+    phase: execute
+    parameters:
+      - main.aux
+    inputs:
+      - file: main.aux
+        type: default
+    outputs:
+      - file: main.aux-ParsedLaTeXAuxilary
+        type: default
+  - name: ParseFileListing
+    command: build
+    phase: execute
+    parameters:
+      - main.fls
+    inputs:
+      - file: main.fls
+        type: default
+    outputs:
+      - file: main.fls-ParsedFileListing
+        type: default
+  - name: ParseLaTeXLog
+    command: build
+    phase: execute
+    parameters:
+      - main.log
+    inputs:
+      - file: main.log
+        type: default
+    outputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+  - name: LogProducedTargets
+    command: build
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: CheckForMissingBuildRule
+    command: build
+    phase: finalize
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+    outputs: []
+  - name: FindLogFiles
+    command: log
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ReportLogMessages
+    command: log
+    phase: execute
+    parameters:
+      - main.log-ParsedLaTeXLog
+    inputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+    outputs: []
+  - name: ParseLaTeXLog
+    command: log
+    phase: execute
+    parameters:
+      - main.log
+    inputs:
+      - file: main.log
+        type: default
+    outputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+  - name: SaveCache
+    command: save
+    phase: execute
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXAuxilary
+    command: build
+    phase: execute
+    parameters:
+      - xallary.aux
+    inputs:
+      - file: xallary.aux
+        type: default
+    outputs:
+      - file: xallary.aux-ParsedLaTeXAuxilary
+        type: default
