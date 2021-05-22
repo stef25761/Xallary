@@ -8,9 +8,20 @@
 \contentsline {subsubsection}{\numberline {1.3.3}Requirements}{4}{subsubsection.1.3.3}%
 \contentsline {paragraph}{Betriebssysteme}{4}{section*.2}%
 \contentsline {paragraph}{Benötigte(s) Tool/IDE}{5}{section*.3}%
-\contentsline {section}{\numberline {2}Bewertung}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Integrierbarkeit in den Entwicklungsprozess}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Zukunftssicherheit}{6}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Kosten/Lizenzen}{6}{section.3}%
-\contentsline {section}{\numberline {4}Fazit}{7}{section.4}%
-\contentsline {section}{\numberline {5}Literatur / Kommentierte Links}{7}{section.5}%
+\contentsline {section}{\numberline {2}Xallary: Laborbeispielapp}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Aufbau}{6}{subsection.2.1}%
+\contentsline {paragraph}{Klassenbiliothek}{6}{section*.4}%
+\contentsline {paragraph}{Android}{6}{section*.5}%
+\contentsline {paragraph}{IOS}{7}{section*.6}%
+\contentsline {subsubsection}{\numberline {2.1.1}Verwendetes Designpattern}{7}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Permissionverwaltung}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Customelemente}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Was sind \textit {Customelemente}}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Implementation eines Customelementes für Android}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}App im Emulator/Smartphone}{8}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}Bewertung}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Integrierbarkeit in den Entwicklungsprozess}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Zukunftssicherheit}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Kosten/Lizenzen}{10}{section.4}%
+\contentsline {section}{\numberline {5}Fazit}{10}{section.5}%
+\contentsline {section}{\numberline {6}Literatur / Kommentierte Links}{11}{section.6}%
