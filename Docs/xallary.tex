@@ -39,15 +39,71 @@ Bei den Designpattern werden verschiedene in diesem Projekt verwendet.
 Zum einen wird das 
 \textit{Dependency Injection Pattern} von \textit{Xamarin} verwendet, welches sich um die Verfügbarkeit von Klassen innerhalb
 der Unterschiedlichen Projekten kümmert. Das Pattern übernimmt die Verwaltung der Klassen, ob diese bswp. als Singelton implementiert werden soll oder
-die Initialisierung und Iinstanziierung.
+die Initialisierung und Instanziierung. Dabei werden \textit{Container} erstellt, wo die Klassen
+hinein ``exportiert''  werden, die dann wieder durch einen \textit{import} in einer anderen Klasse
+importiert werden.(Figure \ref{fig:IoC}, \ref{fig:IoCImport}) 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 00.49.41.png}
+    \label{fig:IoC}
+    \caption{Attribute Tag für das exportieren einer Klasse in den Container}
+\end{figure}
 
-Als weiteres Pattern wird das \textit{MVVM-Pattern}, also Model-ViewModel-View, verwendet.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.01.50.png}
+    \label{fig:IoCImport}
+    \caption{Verwendung und import der exportierenden Klasse durch ein \textit{Get} }
+\end{figure}
+
+
+Als weiteres Pattern wird das \textit{MVVM-Pattern} (Figure \ref{fig:MVVMPattern}), also Model-ViewModel-View, verwendet.
 Dieses Pattern ist ein sehr gängiges in der Welt von C\# beziehungsweise von WPF,UWP oder generell Frameworks welches \textit{Xaml} als 
 \textit{MarkUpLanugage} verwenden.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 00.36.59.png}
+    \label{fig:MVVMPattern}
+    \caption{Orderstruktur des MVVM-Pattern ohne Model}
+\end{figure}
 
+\newpage
 Außerdem wird das \textit{Command Pattern} verwendet, welches dafür sorgt, dass die \textit{UI} keinen Code
-in der \textit{Code Behind Datei}
+in der \textit{Code Behind} besitzt, welcher Klickmethoden auslöst.(Figure \ref{fig:CommandXaml})
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.07.05.png}
+    \label{fig:CommandXaml}
+    \caption{Verwendung des \textit{Command Property} mit Binding an die Methode im ViewModel}
+\end{figure}
+
 \subsection{Permissionverwaltung}
+Wie auch in anderen Sprachen muss einer Berechtigung, also ab hier Persmission, eingeholt werden,
+damit diverse Ressourcen der Hardware verwendet werden können.
+Hier werden folgende Persmission (Figure \ref{fig:Permissions}) benötigt und verwendet:
+\begin{itemize}
+    \item CAMERA
+    \item READ\_EXTERNAL\_STORAGE
+    \item WRITE\_EXTERNAL\_STORAGE
+\end{itemize}
+
+\paragraph{CAMERA} Diese Persmission wird benötigt, damit die App auf die Kamera zugreifen kann und darf.
+Bei Xallary ist es wichtig da das Ziel der Applikation ist, eine funktionierende Foto machene Gallery zu sein.
+Ohne diese Persmission ist der App untersagt auf die Kamera zuzugreifen
+\paragraph{READ\_EXTERNAL\_STORAGE} Da es sich hierbei um eine Gallerie handelt, muss auch eine Persmission gefordert werden, um auf den Internenspeicher zuzugreifen, um dort
+die persitierten Bilder zu laden und dann in der App anzuzeigen.
+\paragraph{WRITE\_EXTERNAL\_STORAGE} Wenn Bilder mit der Kamera aufgenommen werden, sollten diese am besten
+auch auf dem Gerät oder einem Speichermedium gespeichert werden. Hierbei muss eine Persmission eingeholt werden, die das 
+schreiben auf den Speicher des Gerätes erlaubt, da ansonsten keine Bilder wirklich gespeichert werden können und dann nur im \textit{cache}des Gerätes
+zwischen gelagert werden.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.22.18.png}
+    \label{fig:Permissions}
+    \caption{Gesetzte Permissions in der AndroidManifast.xml}
+\end{figure}
+
 %wo bzw wie können diese gesetzt werden 
 %(MainActivity mit check, rechtklick auf das Projekt etc)
 

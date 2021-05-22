@@ -14,14 +14,17 @@
 \contentsline {paragraph}{Android}{6}{section*.5}%
 \contentsline {paragraph}{IOS}{7}{section*.6}%
 \contentsline {subsubsection}{\numberline {2.1.1}Verwendetes Designpattern}{7}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}Permissionverwaltung}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Customelemente}{8}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Was sind \textit {Customelemente}}{8}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Implementation eines Customelementes für Android}{8}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}App im Emulator/Smartphone}{8}{subsubsection.2.3.3}%
-\contentsline {section}{\numberline {3}Bewertung}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Integrierbarkeit in den Entwicklungsprozess}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Zukunftssicherheit}{9}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Kosten/Lizenzen}{10}{section.4}%
-\contentsline {section}{\numberline {5}Fazit}{10}{section.5}%
-\contentsline {section}{\numberline {6}Literatur / Kommentierte Links}{11}{section.6}%
+\contentsline {subsection}{\numberline {2.2}Permissionverwaltung}{10}{subsection.2.2}%
+\contentsline {paragraph}{CAMERA}{10}{section*.7}%
+\contentsline {paragraph}{READ\_EXTERNAL\_STORAGE}{10}{section*.8}%
+\contentsline {paragraph}{WRITE\_EXTERNAL\_STORAGE}{10}{section*.9}%
+\contentsline {subsection}{\numberline {2.3}Customelemente}{11}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Was sind \textit {Customelemente}}{11}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Implementation eines Customelementes für Android}{11}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}App im Emulator/Smartphone}{11}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}Bewertung}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Integrierbarkeit in den Entwicklungsprozess}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Zukunftssicherheit}{12}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Kosten/Lizenzen}{13}{section.4}%
+\contentsline {section}{\numberline {5}Fazit}{13}{section.5}%
+\contentsline {section}{\numberline {6}Literatur / Kommentierte Links}{14}{section.6}%
