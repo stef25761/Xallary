@@ -30,8 +30,8 @@ diese in dem Projekt "angemeldet" werden.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-22 um 23.54.49.png}
-    \label{fig:Ordnerstruktur}
     \caption{Orderstruktur von Xallary}
+    \label{fig:Ordnerstruktur}
 \end{figure}
 \subsubsection{Verwendetes Designpattern}
 Bei den Designpattern werden verschiedene in diesem Projekt verwendet. 
@@ -45,15 +45,15 @@ importiert werden.(Figure \ref{fig:IoC}, \ref{fig:IoCImport})
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 00.49.41.png}
-    \label{fig:IoC}
     \caption{Attribute Tag für das exportieren einer Klasse in den Container}
+    \label{fig:IoC}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.01.50.png}
-    \label{fig:IoCImport}
     \caption{Verwendung und import der exportierenden Klasse durch ein \textit{Get} }
+    \label{fig:IoCImport}
 \end{figure}
 
 
@@ -63,8 +63,8 @@ Dieses Pattern ist ein sehr gängiges in der Welt von C\# beziehungsweise von WP
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 00.36.59.png}
-    \label{fig:MVVMPattern}
     \caption{Orderstruktur des MVVM-Pattern ohne Model}
+    \label{fig:MVVMPattern}
 \end{figure}
 
 \newpage
@@ -74,8 +74,8 @@ in der \textit{Code Behind} besitzt, welcher Klickmethoden auslöst.(Figure \ref
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.07.05.png}
-    \label{fig:CommandXaml}
     \caption{Verwendung des \textit{Command Property} mit Binding an die Methode im ViewModel}
+    \label{fig:CommandXaml}
 \end{figure}
 
 \subsection{Permissionverwaltung}
@@ -100,8 +100,8 @@ zwischen gelagert werden.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 01.22.18.png}
-    \label{fig:Permissions}
     \caption{Gesetzte Permissions in der AndroidManifast.xml}
+    \label{fig:Permissions}
 \end{figure}
 \subsubsection{Benutzer Erfragung für die Permissions}
 Damit der Nutzer einer App weiß, welche Freigaben er tätigen muss, wird in der Appentwicklung der Nutzer gefragt,
@@ -112,14 +112,114 @@ Bei \textit{Android} und auch in \textit{Xamarin} muss das Erfragen in der \text
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 02.06.51.png}
-    \label{fig:MainActivity}
     \caption{RequestPermissionMethod in der MainActivity}
+    \label{fig:MainActivity}
+\end{figure}
+\subsection{Customelemente}
+Ein \textit{Customelemente} ist wie der Name es sagt, ein individuelles erstelltes Element, welches aus verschiedenen Elementen, wie Button, Grids, Sliders etc.. bestehen kann.
+Für eine App ist es wichtig, dass solche Elemente erstellt werden können, da unterschiedliche Anforderungen nicht immer mit den bereits Bereitgesellten Elementen realisiert werden kann.
+Außerdem können \textit{Custom Elemente} wiederverwendet werden, was einen \textit{Boiler-Code} im UI-Code erstparrt.
+Auch brauchen Entwickler nicht 100x mal die selbe Lösung via \textit{Copy and Paste} einfügen und die Wartbarkeit ist hiermit auch eher gewährleiste, als an 100 Stellen den Code zu modifizieren.
+
+\textit{Customelemente} sind nicht nur ein spezielles Element in \textit{Xamarin} sondern finden auch ihre Verwendung in anderen Sprachen oder 
+Frameworks von C\# , wie \textit{WPF} oder \textit{UWP}. 
+
+\subsubsection{Implementation eines Customelementes}
+\paragraph{C\#} In C\# werden die Customelemente in einer ``nomalen'' Klasse geschrieben, diese wiederum von der \textit{View-Klasse} erbt, da die \textit{View} die nötigen \textit{Properties} bestitzt.
+Außerdem  kann dort ``leichte'' Logik implementiert werden, die eine View benötigt. Um der selbst erstellen \textit{View} eigene, individuelle \textit{Properties}
+zu geben, müssen \textit{Bindable Properties} implementiert werden. Diese brauchen bestimmte Parameter. Mehr dazu ist in der Dokumentation zu finden und
+bei der Abbildung \ref{fig:CustomelementCS}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 18.15.39.png}
+    \caption{Customelement Klasse}
+    \label{fig:CustomelementCS}
+\end{figure} 
+
+Ist das Element korrekt implementiert, kann dieses in jeder \textit{Page/View} verwendet werden, indem das Element
+in die \textit{View} importiert wird und dann wie jedes ``normale'' Element verwendet werden. (Figure \ref{fig:UsingCustomElement})
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 18.16.54.png}
+    \caption{Verwenden eines Customelementes in einer Page/View}
+    \label{fig:UsingCustomElement}
+\end{figure}
+\paragraph{Android} 
+ Die Erstellung eines Customelementes exklusiv für Android ist ein wenig aufwendiger. In unserer App haben wir, das Tutorial von 
+\textit{Microsoft} verwendet, welches genau unsere Vorstellungen erfüllt hat. Hier wird ausßerdem noch ein \textit{Custom Renderer} implementiert, der
+den C\# Code und den erstellten Andorid Code zusammen ``merged'' und dann die Android Rendermaschine verwendet, um das Element korrekt anzuzeigen.
+
+\subsection{App im Emulator/Smartphone}
+Die fertige App sieht wie foglt aus:
+
+\newpage
+\subsubsection{Fullscreen Customcameraelemt}
+Dieses Element ist das obenbeschriebene \textit{Customelement}.
+Zusehen im Bild ist eine Kamera, die von dem Emulator erstellt wurde.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{CustomCameraElement.png}
+    \caption{Customelement welches die Kamera des Gerätes verwendet.}
+\end{figure}
+\subsubsection{Crossplattformimplementationen einer funktionierenden Kamera}
+\paragraph{Ansicht ohne ausgewählten oder gemachten Foto}
+ Sollte noch kein Foto gemacht worden sein oder ein Foto über das \textit{Filesystem}
+ ausgewählt wurde, dann sieht das Element leer aus. Beide Buttons sind im dazugehörogen \textit{Viewmodel} implementiert.
+ Die Funktion wurde aus dem Beispiel von Xamarin entnommen und für unsere zwecke angepasst.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{CleanEssentialsPage.png}
+    \caption{Seite mit zwei Buttons, und einem Imageview elementes, welches noch nicht sichtbar ist}
+\end{figure}
+\newpage
+\paragraph{Ansicht mit einem ausgewählten oder gemachten Foto}
+ Sollte ein Bild mit der Kamerafunktion gemacht worden oder mit dem Auswahlbutton ausgewählt worden sein,
+ wird unter den Buttons dieses Bild erscheinen, da das gewählte \textit{Layout} sich um ein \textit{Stacklayout}
+ handelt und dieses ihre Kindelemente übereinander positioniert.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{CameraEssentials.png}
+    \caption{Anicht mit Foto}
 \end{figure}
 
-%wo bzw wie können diese gesetzt werden 
-%(MainActivity mit check, rechtklick auf das Projekt etc)
+\paragraph{Foto schießen}
+ Sobald der Button zum Fotomachen gedrückt worden ist, öffnet sich das Betriebssystemkamera-UI
+ welches jenach Betriebssystem unterscheidlich aussehen kann. Hier kann dann auf das Fotokamerasymbol
+ gedrückt werden und das Foto wird aufgenommen (Figure \ref{fig:TakeFoto}). 
+ Nachdem dies gemacht wurde, kommt ein weiterer Dialog, wo der Benutzter entscheiden kann, ob das
+ Bild genommen werden soll und somit gespeichert wird oder ob es verworfen werden soll.(Figure \ref{fig:TakeFoto})
 
-\subsection{Customelemente}
-\subsubsection{Was sind \textit{Customelemente}}
-\subsubsection{Implementation eines Customelementes für Android}
-\subsubsection{App im Emulator/Smartphone}
+ 
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{TakePicFromEssentials.png}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{ChoosePic.png}
+      \end{subfigure}
+    \caption{Foto schießen und auswählen}
+    \label{fig:TakeFoto}
+\end{figure}
+
+\paragraph{Fotos aus dem \textit{Filesystem} auswählen}
+ Um die bereits gemachten Fotos anzuzeigen musst dann auf den anderen Button gedrückt werden.
+ Dieser öffnert daraufhin das Filesystem des Betriebssystemes. Dort sind dann die Fotos zusehen, die mit dieser App gemacht wurden.
+ Es ist auch möglich Bilder aus der Gallery hier anzuzeigen. (Figure \ref{fig:TakePicFromPicker})
+
+ \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{ChoosePickWithPicPicker.png}
+      \end{subfigure}
+      \begin{subfigure}[b]{0.4\linewidth}
+        \includegraphics[width=\linewidth]{CameraEssentials.png}
+      \end{subfigure}
+    \caption{Auswählen und anzeigen eines Fotos}
+    \label{fig:TakePicFromPicker}
+\end{figure}
+
+
+
