@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1621726943 "/Users/stefankohn/Desktop/Xallary/Docs/main.tex" "main.pdf" "main" 1621726995
+["pdflatex"] 1621728534 "/Users/stefankohn/Desktop/Xallary/Docs/main.tex" "main.pdf" "main" 1621728682
   "/Users/stefankohn/Desktop/Xallary/Docs/main.tex" 1621718603 8898 a50cc03cdf2ffb190eabc7d5a9490cf1 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -95,18 +95,19 @@
   "images//Bildschirmfoto 2021-05-23 um 01.01.50.png" 1621724555 300507 15d71592f4733458d18b4f0c22c4eaa7 ""
   "images//Bildschirmfoto 2021-05-23 um 01.07.05.png" 1621724876 136234 685dc1d6750ad26a9310c4db73810d54 ""
   "images//Bildschirmfoto 2021-05-23 um 01.22.18.png" 1621725865 234980 e75607ae66e263697aef97a3b4cde7e4 ""
+  "images//Bildschirmfoto 2021-05-23 um 02.06.51.png" 1621728457 287438 826a25d35e47e08335b959eaa8910fcf ""
   "images//xamarin-logo.pdf" 1621718503 1571 53a4cf42ab50be4fac239c56a5a04687 ""
   "images//xaml-code.png" 1621718503 22806 20e5fd4250e45e701f88eed19e49f65c ""
-  "main.aux" 1621726944 2804 88eca9336af895b66a80c8acc3c317bf "pdflatex"
-  "main.out" 1621726944 3281 ed0c9ac126348fbbb653a0ec6fa72e79 "pdflatex"
+  "main.aux" 1621728535 2804 88eca9336af895b66a80c8acc3c317bf "pdflatex"
+  "main.out" 1621728535 3554 5d50ce3285f4fde52a0c64ad7844c3ea "pdflatex"
   "main.tex" 1621718603 8898 a50cc03cdf2ffb190eabc7d5a9490cf1 ""
-  "main.toc" 1621726944 2318 382e4d450a800f91aa7bf95a13b7f84a "pdflatex"
-  "xallary.aux" 1621726944 3708 2ce3879115841b0995d9c0e9b7d1ff52 "pdflatex"
-  "xallary.tex" 1621726993 6335 4f49085ec5d3ad476803522ac1b4b0b7 ""
+  "main.toc" 1621728535 2434 7937b63e8e4c0359adc414f3c0a2e6f2 "pdflatex"
+  "xallary.aux" 1621728535 4125 f989a368aff9c14e45483a0a2e3388e4 "pdflatex"
+  "xallary.tex" 1621728680 7071 b145f28fe56329a788aedb57633a3a86 ""
   (generated)
   "main.pdf"
+  "main.log"
   "main.out"
+  "main.toc"
   "main.aux"
   "xallary.aux"
-  "main.log"
-  "main.toc"

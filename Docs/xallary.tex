@@ -103,6 +103,18 @@ zwischen gelagert werden.
     \label{fig:Permissions}
     \caption{Gesetzte Permissions in der AndroidManifast.xml}
 \end{figure}
+\subsubsection{Benutzer Erfragung für die Permissions}
+Damit der Nutzer einer App weiß, welche Freigaben er tätigen muss, wird in der Appentwicklung der Nutzer gefragt,
+ob dieser einverstanden ist, dass eine App auf beispielsweise die Kamera zugreifen darf. Verneint dieser diese Anfrage
+wird nicht auf die Kamera zugegriffen bis die Persmission von Benutzer erteilt wurde.
+Bei \textit{Android} und auch in \textit{Xamarin} muss das Erfragen in der \textit{MainActivity} geschehen. (Figure \ref{fig:MainActivity})
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Bildschirmfoto 2021-05-23 um 02.06.51.png}
+    \label{fig:MainActivity}
+    \caption{RequestPermissionMethod in der MainActivity}
+\end{figure}
 
 %wo bzw wie können diese gesetzt werden 
 %(MainActivity mit check, rechtklick auf das Projekt etc)

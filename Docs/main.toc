@@ -18,6 +18,7 @@
 \contentsline {paragraph}{CAMERA}{10}{section*.7}%
 \contentsline {paragraph}{READ\_EXTERNAL\_STORAGE}{10}{section*.8}%
 \contentsline {paragraph}{WRITE\_EXTERNAL\_STORAGE}{10}{section*.9}%
+\contentsline {subsubsection}{\numberline {2.2.1}Benutzer Erfragung für die Permissions}{11}{subsubsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.3}Customelemente}{11}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Was sind \textit {Customelemente}}{11}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Implementation eines Customelementes für Android}{11}{subsubsection.2.3.2}%
